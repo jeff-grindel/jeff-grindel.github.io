@@ -1,0 +1,417 @@
+<!DOCTYPE html5>
+<html>
+	<style>
+	</style>
+	<head>
+<<<<<<< HEAD
+		<title>Design and Synthesis of Multi-Operand Adders</title>
+		<link rel="stylesheet" type="text/css" href="style/style.css" />
+		<link rel="shortcut icon" href="style/favicon.ico"/>
+		
+		<meta name="keywords" content="Jeff Grindel, VLSI, Cadence, EDA, Design, Synthesis, Hardware, Engineering, Computer, Verilog"/>
+		<meta name="description" content="VLSI design and synthesis of multi-operand adders"/>
+		<meta name="author" content="Jeff Grindel"/>	
+	
+		<meta name="og:url" content="http://jeffgrindel.com/VLSI.html" />
+		<meta name="og:title" content="Design and Synthesis of Multi-Operand Adders" />
+		<meta name="og:description" content="VLSI design and synthesis of multi-operand adders" />
+	
+		<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-37279532-1']);
+		  _gaq.push(['_setDomainName', 'jeffgrindel.com']);
+		  _gaq.push(['_setAllowLinker', true]);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+=======
+		<title>Jeff Grindel</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="shortcut icon" href="favicon.ico"/>
+		<meta name="keywords" content="Arduino, Jeff Grindel"/>
+		<meta name="description" content="Jeff Grindel's Website"/>
+		<meta name="author" content="Jeff Grindel"/>	
+	
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-36671313-1']);
+			_gaq.push(['_setDomainName', 'azurewebsites.net']);
+			_gaq.push(['_setAllowLinker', true]);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+>>>>>>> Added full website
+		</script>
+	</head>
+	<body>
+		<header>
+			<h1 style="text-align:center;">Jeff Grindel</h1>
+			<p class="seperator shadow rounded" />
+		</header>
+		<div id="container" class="container">
+			<div id="content" class="content">
+				<div class="menu">
+					<ul class="menu shadow rounded">
+						<li class="header">Menu</li>
+						<li class="item"><a href="index.html">Home</a></li>
+						<li class="section">Projects</li>
+<<<<<<< HEAD
+						<li class="item"><a href="SousVide.html">Sous Vide</a></li>		
+						<li class="item"><a href="CISC_OS.html">CISC OS</a></li> <!--Change this to differ from the Projects link which is above -->
+						<li class="item"><a href="MIPS.html">MIPS Processor</a></li>
+						<li class="section"><a href="VLSI.html#">Multi-Operand Adders</a></li>
+						<li class="item"><a href="projects.html#D3L">D3L Adders</a></li>
+						<li class="item"><a href="projects.html#CompSim">HDL Simulation</a></li>
+						<li class="item"><a href="Ipro2.html">Engineering Solutions</a></li>
+=======
+						<li class="item"><a href="projects.html#ASV">Sous Vide</a></li>		
+						<li class="item"><a href="CISC_OS.html#Micro">CISC OS</a></li> <!--Change this to differ from the Projects link which is above -->
+						<li class="item"><a href="projects.html#Processor">MIPS Processor</a></li>
+						<li class="section"><a href="projects.html#VLSI">VLSI Adders</a></li>
+						<li class="item"><a href="projects.html#Ipro2">Engineering Solutions</a></li>
+>>>>>>> Added full website
+						<li class="item"><a href="projects.html#Ipro1">Polar Power</a></li>
+
+						<li class="section">Contact</li>
+						<li class="item"><a href="http://www.linkedin.com/in/jeffgrindel" target="_blank">LinkedIn</a></li>
+						<li class="item"><a href="mailto:jeff.grindel@gmail.com?Subject=Website Inquiry" target="_blank">Email</a></li>
+						<li class="item"><a href="school/Jeff_Grindel.pdf" target="_blank">Resume</a></li>
+					</ul>
+				</div>
+	
+				<div class="main">
+					<fieldset class="shadow rounded">
+						<legend><a id="VLSI">VLSI Adder Synthesis</a></legend>
+<<<<<<< HEAD
+							<p> <!--Tittle !-->
+								8 Operand Addidion with addidional code for a 10 operand addition.
+								  
+								Full <a href="#source">source code </a> and report are at the bottom of the page. Project partner Mike Bodzay.
+							</p> <!--Come up with better forward !-->
+							
+							<p><h3>Introduction</h3>
+								<DD><p>The purpose of this project was to design and implement three different multi-operand adders
+								and to compare them against each other to determine which was the most efficient, based off 
+								of the power, timing, and area results. These adders will be designed and implemented using 
+								data path circuit design, standard cell based design flow, and design validation and verification 
+								through the construction of Verilog programs. The adders will be synthesized using commercial EDA 
+								tools from Synopsys and Cadence Design Systems.</p>
+								
+								<p>The first adder is simply a Carry Ripple adder which is the basic implementation of tying a series 
+								of full adders together in a linear method and has the carry out of one full adder as an input to
+								the next full adder. The second adder is a [3:2] Carry Save adder in a linear implementation. This 
+								is similar to the carry ripple adder, but in this implementation the full adder does not need to wait 
+								for the previous carry out bit to be calculated before it does its own calculation. The final adder 
+								that was synthesised is a [4:2] Carry Save adder in a tree implementation which utilizes a lot fewer 
+								adders than the linear implementations.</p></DD> <!--Add breif intro about [5:2] adder!-->
+							</p>
+							
+							<p><h3>Background</h3>
+							
+								<p><DD><h4>Carry Ripple Adder</h4>
+									A Carry Ripple Adder (CRA) or Carry Propagation Adder (CPA) is the basic implementation of a linear 
+									set of full adder strung together to form a complete adder. A Full Adder takes three inputs, and 
+									generates two outputs, a sum and a carry out. This can be seen below in Figure 1 [1].
+									
+									<img src="projects/429/Figures/Fig1.JPG" width="50%">
+									
+									<p>
+									In order to generate a full adder that took in multiple bit numbers, they were aligned so the Cout 
+									of the first Full Adder was the Cin for the second, etc. This generates a single-bit Cout, and a 
+									bit sum. Seen below in Figure 2 [1].
+									</p>
+									
+									<img src="projects/429/Figures/Fig2.JPG" width="50%">
+									
+									<p>Finally, the multiple bit full adders can be put together to form a complete multi-operand 
+									addition. This can be seen below in a 4-operand example in Figure 3. (A,B,C,D,Sum are multi-bit, 
+									and Ci and Co are just single-bit). </p>
+									
+									<img src="projects/429/Figures/Fig3.JPG" width="25%">
+									
+									<p>This can be expanded to <i>p</i>-operands by continually adding a Multi-Bit Full Adder to the
+									next level, and bringing in a new operand. In total, for 8-Operand addition there needs to be
+									seven multi-bit full adders.</p>
+									
+								</DD></p>
+								
+								<p><DD><h4>[3:2] Linear Carry Save Adder</h4>
+									<p>A [p:2] Carry Save Adder (CSA) is a way to take p bit-vectors and reduce them to just 2
+									bit-vectors(VS, VC). After they are reduced to the 2 bit-vectors they can be put through a full
+									adder to get the sum and the carry out. A [3:2] Carry Save Adder (CSA) is simply a modified full
+									adder, in our case to take in three 7-bit numbers and return two 7-bit numbers. The CSA allows
+									for the three bits to be added together through a full adder and to generate a VS, and a VC that
+									carries twice the weight. That is it is shifted to the left one bit than the generated sum. The
+									picture below in Figure 4 shows the implementation of a [3:2] CSA [2]. </p>
+									
+									<img src="projects/429/Figures/Fig4.JPG" width="50%">
+									
+									<p>
+									In our implementation of the [3:2] CSA, these adders will be put in a linear implementation. 
+									That is the first three numbers are summed together to obtain VS, and VC. These outputs are 
+									now the inputs for the next CSA along with the next number that needs to be added. After the 
+									final CSA takes place, the results are then fed to a Carry Propagation Adder (CPA) to obtain 
+									the Sum and Carry Bit; this can be seen below in Figure 5 [2].
+									</p>
+									
+									<img src="projects/429/Figures/Fig5.JPG" width="25%">
+								</DD></p>
+								
+								
+								<p><DD><h4>[4:2] Tree Carry Save Adder</h4>
+									<p>
+									A [4:2] CSA is simply a modified full adder, in our case to take in four 7-bit numbers and return 
+									two 7-bit numbers. The CSA allows for the four bits to be added together through a full adder and 
+									to generate a VS, and a VC. In a [4:2] CSA there are two levels to it. These levels implement the 
+									[3:2] CSA, the first level takes 3 of the inputs, and generate the typical output for a [3:2] CSA.
+									In the second level the fourth input is added to a sum from the previous level, and a carry from 
+									the previous bit of the previous level. The picture below in Figure 6 shows the implementation of 
+									a [4:2] CSA [2].</p>
+									
+									<img src="projects/429/Figures/Fig6.JPG" width="50%">
+									
+									<p>
+									In our implementation of the [4:2] CSA, these adders will be put in a tree implementation. That is 
+									the first four numbers are summed together to obtain VS, and VC. And the last four number are summed
+									together to obtain VS, and VC. The two sets of VS and VC then are inputted into a third [4:2] CSA on 
+									the second level. After the final CSA takes place, the results are then fed to a Carry Propagation Adder 
+									(CPA) to obtain the Sum and Carry Bit; this can be seen below in Figure 7 [2].
+									</p>
+									
+									<img src="projects/429/Figures/Fig7.JPG" width="40%">
+								
+								</DD></p>
+								
+								
+								<p><DD><h4>[5:2] Tree Carry Save Adder</h4>
+									<p>
+									The [5:2] CSA was used to implement 10-operand addition. This was done utilizing a [5:2] 
+									CSA, as seen in the Figure 8 below [2].
+									</p>
+									
+									<img src="projects/429/Figures/Fig8.JPG" width="50%">
+								
+									<p>
+									The [5:2] adder was very similar to the other CSA, with this implementation it had three 
+									levels of multi-bit full adder described earlier in the report. Utilizing these Carry Outs
+									of each level could be manipulated to become Carry Inputs for the other levels of Full Adders.
+									As seen in the figure above. The first level of full adders takes in the first three operands and 
+									generates a sum and carry, the sum is fed directly to the next level, and the carry is sent to the 
+									input of the third level full adder but shifted to the left by one. The second level takes the sum 
+									from the first level, and the other two operands. This generates another sum and carry. The sum is 
+									sent to the input of the third level full adder, and the carry is sent to the input of the third 
+									level full adder but shifted to the left by one. Finally the third level takes in the sum from 
+									level two, and the two carries from the level one and level two from the right section. 
+									This final level generates the VS and VC that can then be inputted into a simple CPA to
+									generate the sum and carry out.
+									</p>
+									
+									<p>
+									In order to account for all the 10 operands, a tree structure where the first 5 operands are 
+									inputted into a [5:2] CSA, and the last five operands are inputted into another [5:2] CSA. The 
+									4 total outputs of the [5:2] (VS1, VC1, VS2, VC2) are then inputted into a [4:2] CSA to generate 
+									VS3 and VC3. These outputs are then inputted into a CPA where the Ci could then be factored in. 
+									This generates the single bit Cout and the multi-bit Sum. This implementation of 10-operand 
+									addition can be seen below in Figure 9.
+									</p>
+									
+									<img src="projects/429/Figures/Fig9.JPG" width="50%">
+									
+									
+								</DD></p>
+								
+								
+							</p>
+														
+							<p><h3>Functional Validation and Verification</h3>
+								<p><DD>
+								In order to ensure proper functionality throughout the design process of our 8 operand adders, 
+								we employed different verification techniques. First, the original verilog code for each adder 
+								was tested using a test bench. The test bench simulated several different input combinations 
+								to verify that the code produced the correct sum for input values between 0 and 15 for each 
+								perand. In addition, the carry-in and carry-out bits were tested by running a simulation with 
+								a carry-in value of 1 and a simulation with a sum of 128 respectively. Having a sum of 128
+								verifies the carry-out bit because the sum output is only 7 bits long and 128 is an 8 bit number. 
+								The list of simulations run can be seen in the Table below. </p>
+								
+								<img src="projects/429/Figures/T1.JPG" width="100%">
+								
+								<p>This test bench outlined above was used to verify each of the three different designs, 
+								thus ensuring that the carry ripple adder, [3:2] linear, and [4:2] tree adder produced the same 
+								results as can be seen in the Table below.</p>
+								
+								<p>Validation after gate level synthesis (.vh file), and placement and routing (final.v file) 
+								was achieved by using the same test bench as the original code. This allowed us to check 
+								the results of the simulations in two different ways. We could verify that each simulation gave 
+								correct sum and we could compare the results to those obtained from the test bench of the original 
+								code.</p>
+								
+								<p>Although using the test bench shows proper functionality during different steps of the design process, 
+								in order to guarantee the correctness of our models, we must use formal equivalence checking. To do this 
+								we use Synopsys Formality. This software can verify the original verilog code to the standard cell layout 
+								that has been synthesized and optimized [3].</p>	
+								
+								<img src="projects/429/Figures/T2.JPG" width="100%">
+								
+								<p>Since the [5:2] adder took the sum of 10-operands instead of just 8 a different set of conditions 
+								were tested. They took on the same testing principles as stated above. Below is a Table that sumerizes
+								the 10-operand addition. </p>
+								
+								<img src="projects/429/Figures/T3.JPG" width="100%">
+								
+							</DD></p>
+							
+							<p><h3>Synthesis Results</h3>
+								<p><DD>
+								The carry ripple adder, 3:2 linear, and 4:2 tree adder were synthesized using the same design process. 
+								First, the preliminary verilog code was created using structure verilog code. Structural verilog code allowed 
+								us to easily follow the execution of the code and debug possible errors.
+								</p>
+								<p>Next, the verilog code was synthesized into standard cells. This process was completed using Synopsys Design 
+								Compiler [3]. The compiler requires two pieces of information into order to properly function: the verilog code 
+								to be synthesized and specifications for the synthesis. The specification file from lab 9 was used with minor 
+								modifications. The list of verilog files was modified to include our code to be synthesized and the clock was 
+								changed to 250 MHz as specified in the project descriptions. The output of the compiler is a gate level netlist 
+								of the interconnected standard cells saved as a .vh file.
+								</p>
+								<p>After creating the netlist of standard cells, we need to lay them out and connect them. Since the dimensions, 
+								timing, and power consumption for all standard cells are known, we can use that information to optimally place 
+								each cell and connect it to the other cells. This process is completed using Encounter [3]. As with the Design 
+								Compiler, Encounter requires two pieces of information: the gate level netlist to be laid out and a template file. 
+								The template file used was the same one used for lab 9. It contains information regarding the placement and 
+								routing of the cells. We modified it to include the netlist obtained from the Design Compiler. Encounter 
+								produces a GDSII file (final.gds2) which contains the optimized cell layout, an equivalent verilog model 
+								(final.v) of the circuit, and many files regarding timing and power. The GDSII file is used for the final 
+								layout design and the verilog model is used for verification. The timing and power files are used for 
+								comparison and analysis.
+								</p>
+								<p>At this stage we had all the information necessary to analyze the three different adder designs. 
+								In order to accurately compare the different designs we looked at three different factors: timing, power, 
+								and size. All these factors are important to chip design because we wish to have the fastest logic 
+								possible for the lowest price and the lowest power consumption. Using the information output by Encounter 
+								after the placement and routing of the standard cells, we were able to determine the size of each design, 
+								the power consumption, and the propagation delay. The results are shown below in the Table.
+								</p>
+								
+								<img src="projects/429/Figures/T4.JPG" width="100%">
+								
+								<p>The carry ripple adder is by far the slowest design out of the three. This is because the carry-out 
+								is propagated from one bit to the next, thus sum of the current bit has to be completed before he sum of 
+								the next bit can start. The linear adder and tree adder, however, are much faster because the carry is 
+								saved instead of propagated. The tree adder is faster than the linear adder because it has 2 fewer levels; 
+								the tree adder has 4 levels and the final addition, whereas the linear adder has 6 levels and the final addition.
+								</p>
+								
+								<p>The size of the designs is determined by the number of standard cells required to construct it. 
+								Again, the carry ripple adder is much larger than the other two. The propagation of the carry-out requires 
+								there to be more internal adders, thus increasing the size. The linear adder and the tree adder are much more 
+								comparable due to carry saving. The tree adder is slightly smaller due to the fewer levels required to implement 
+								it.
+								</p>
+								
+								<p>The power consumption is related to the number of transistors required for each design. As previously discussed, 
+								the carry ripple adder is much larger meaning it has more transistors. Since it has more transistors, the carry ripple 
+								adder will have a larger power requirement. However, the linear adder and tree adder have similar sizes but the tree 
+								adder consumes almost half the power. This is due to the activity factor of the transistors. The activity factor of 
+								the tree adder transistors is likely to be lower than those of the linear adder, resulting in a lower power requirement.
+								</p>
+								
+								<p>Comparing the three designs as a whole it is clear that the tree adder is a much better design because it is smaller, 
+								faster, and has lower power requirements than the others.
+								</p>
+
+								<p>Finally, we need to complete the layout design. The GDSII file produced by Encounter contains the layout of the placement 
+								and routing of the standard cells, but it does not contain the individual cell layouts. To incorporate the individual layouts 
+								into the placement layout, we use Virtuoso [3]. Virtuoso accepts the GDSII file as an input stream and uses a standard cell 
+								library to import the layouts of the standard cells. The resulting layout design for the carry ripple adder, linear adder, 
+								and tree adder can be seen in figures the figures below.
+								</p>
+								
+								<img src="projects\429\part1\Out_part1\Virtuoso2.JPG" width="50%"><br><br>
+								<img src="projects\429\part2\Out_part2\Virtuoso2.JPG" width="50%"><br><br>
+								<img src="projects\429\part3\Out_part3\Virtuoso2.JPG" width="50%"><br><br>
+								
+								</DD></p>
+							
+							<p><h3>Conclusion</h3>
+								<p><DD>
+								Three different 4-bit, 8 operand adders were designed as part of this project: a carry ripple adder, 
+								a [3:2] linear adder, and a [4:2] tree adder. The same design process was used for all three. First, 
+								the verilog code was written. Then, the code was synthesized into a netlist of standard cells using 
+								Synopsys Design Compiler. After that, the layout of the placement and routing of the standard cells was 
+								created using Encounter. Finally, the individual standard cell layouts were added to the layout of the 
+								placement of the cells using Virtuoso.
+								</p>
+								
+								<p>Throughout the design process, the results were validated using a verilog test bench. The test bench
+								simulated several input combinations for the adders so they could be verified to be operating correctly 
+								for all input cases. The same test bench was used for all three designs and at each stage in the process 
+								so the results could be compared to ensure proper functionality. Additionally, once the placement and routing 
+								was completed, Synopsys Formality was used to formally verify that the interconnected cell layout was equivalent 
+								to the original verilog code.
+								</p>
+								
+								<p>Once the design was complete, it was found that the [4:2] tree adder was the most ideal out of the tree 
+								designs. It was the smallest, the fastest, and had the lowest power requirements of all three designs. This 
+								is due to the fact that the carry ripple adder uses carry propagation, greatly slowing down the logic operation, 
+								and the [3:2] linear adder had more levels, requiring more space and more power.
+								</p>	
+								<p>In addition to the three 4-bit, 8 operand adders, one 4-bit, 10 operand adder was also designed. This adder 
+								used two [5:2] carry save adders and one [4:2] carry save adder in a tree format. This adder was designed using 
+								verilog code and was tested using a new test bench that implemented two extra operands. The verilog code was 
+								tested to be fully functional, however it was designed as a proof of concept and the layout was not synthesized.
+								</p>	
+							
+							</DD></p>
+							
+							<p><h3>Refereces</h3>
+							<DD>
+							<ol>
+								<li>CMOS VLSI Design: A Circuits and Systems Perspective. Neil Weste, David Harris. 2011. </li>
+								<li>ECE 429, Fall 2012 Final Project Guide. Dr. Erdal Oruklu. 11/20/2012 </li>
+								<li>ECE 429- Tutorial IV: Standard Cell Based ASIC Design Flow. Dr. Jia Wang. August 2011. </li>
+							</ol>			
+							
+							</DD></p>
+							
+						
+							<p><h5>Please remember to use academic honesty. This is simply to showcase the projects I have worked on. It does not help at all
+						   to just copy and paste another person's implementation.</h5></p>
+							
+							<a id = "source" href="https://github.com/jeff-grindel/VLSI_Adder" target="_blank">Source/Report</a><br>
+	
+=======
+							<p>
+							Detailed Write-Up coming soon.
+						
+							</p>
+						
+>>>>>>> Added full website
+						<a href="projects.html#VLSI"><br><b>Back...</b></a>
+						
+						<br><a href="#Top"><br>Top</a>
+					</fieldset>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="shadow">
+<<<<<<< HEAD
+				<p>Jeff Grindel 2013</p>
+=======
+				<p>Jeff Grindel 2012</p>
+>>>>>>> Added full website
+			</div>
+		</footer>
+	</body>
+</html>
+

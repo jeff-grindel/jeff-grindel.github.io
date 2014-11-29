@@ -1,0 +1,305 @@
+<!DOCTYPE html5>
+<html>
+	<style>
+	</style>
+	<head>
+<<<<<<< HEAD
+		<title>Arduino Sous-Vide Build</title>
+		<link rel="stylesheet" type="text/css" href="style/style.css" />
+		<link rel="shortcut icon" href="style/favicon.ico"/>
+		
+		<meta name="keywords" content="Arduino, Jeff Grindel, cooking, Sous Vide, Microcontroller, Circuits"/>
+		<meta name="description" content="Detailed description of my Sous-Vide Cooker building using an Arduino Microcontroller"/>
+		<meta name="author" content="Jeff Grindel"/>	
+	
+		<meta name="og:url" content="http://jeffgrindel.com/SousVide.html" />
+		<meta name="og:title" content="Arduino Sous-Vide Build" />
+		<meta name="og:description" content="Detailed description of my Sous-Vide Cooker building using an Arduino Microcontroller" />
+		
+		<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-37279532-1']);
+		  _gaq.push(['_setDomainName', 'jeffgrindel.com']);
+		  _gaq.push(['_setAllowLinker', true]);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+=======
+		<title>Jeff Grindel</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="shortcut icon" href="favicon.ico"/>
+		<meta name="keywords" content="Arduino, Jeff Grindel"/>
+		<meta name="description" content="Jeff Grindel's Website"/>
+		<meta name="author" content="Jeff Grindel"/>	
+	
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-36671313-1']);
+			_gaq.push(['_setDomainName', 'azurewebsites.net']);
+			_gaq.push(['_setAllowLinker', true]);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+>>>>>>> Added full website
+		</script>
+	
+	</head>
+	<body>
+		<header>
+			<h1 style="text-align:center;">Jeff Grindel</h1>
+			<p class="seperator shadow rounded" />
+		</header>
+		<div id="container" class="container">
+			<div id="content" class="content">
+				<div class="menu">
+					<ul class="menu shadow rounded">
+						<li class="header">Menu</li>
+<<<<<<< HEAD
+						<li class="item"><a href="index.html">Home</a> </li>
+						<li class="section">Projects</li>
+						<li class="section"><a href="SousVide.html#ASV">Sous Vide</a> </li>	
+						<li class="item"><a href="CISC_OS.html">CISC OS</a> </li>
+						<li class="item"><a href="MIPS.html">MIPS Processor</a> </li>
+						<li class="item"><a href="VLSI.html">Multi-Operand Adders</a></li>
+						<li class="item"><a href="projects.html#D3L">D3L Adders</a></li>
+						<li class="item"><a href="projects.html#CompSim">HDL Simulation</a></li>
+						<li class="item"><a href="Ipro2.html">Engineering Solutions</a> </li>
+						<li class="item"><a href="projects.html#Ipro1">Polar Power</a> </li>
+=======
+						<li class="item"><a href="index.html">Home</a></li>
+						<li class="section">Projects</li>
+						<li class="section"><a href="#ASV">Sous Vide</a></li>		<!--Change this to differ from the Projects link which is above -->
+						<li class="item"><a href="projects.html#Micro">CISC OS</a></li>
+						<li class="item"><a href="projects.html#Processor">MIPS Processor</a></li>
+						<li class="item"><a href="projects.html#VLSI">VLSI Adders</a></li>
+						<li class="item"><a href="projects.html#Ipro2">Engineering Solutions</a></li>
+						<li class="item"><a href="projects.html#Ipro1">Polar Power</a></li>
+>>>>>>> Added full website
+						
+						<li class="section">Contact</li>
+						<li class="item"><a href="http://www.linkedin.com/in/jeffgrindel" target="_blank">LinkedIn</a></li>
+						<li class="item"><a href="mailto:jeff.grindel@gmail.com?Subject=Website Inquiry" target="_blank">Email</a></li>
+						<li class="item"><a href="school/Jeff_Grindel.pdf" target="_blank">Resume</a></li>
+					</ul>
+				</div>
+	
+				<div class="main">
+					<fieldset class="shadow rounded">
+						<legend><a id="ASV">Sous Vide</a></legend>
+							<p>Sous-Vide is a method of cooking food in a sealed plastic bag in a 
+								water bath for a longer period of time. The water bath needs to be 
+								at a constant temperature (around 125 °F to 140 °F) for a long period 
+								of time in order to cook the food evenly.
+								<a href="http://en.wikipedia.org/wiki/Sous-vide">Wikipedia</a>
+							</p>
+
+							<p>Instead of buying one off the shelf, I thought it would be a good
+							idea to build one from scratch using my Arduino Microcontroller. 
+							</p>
+					
+							<p><h3>Parts List:</h3>
+							<DD>Arduino Uno Rev. 3 &nbsp;<a href=http://www.arduino.cc/en/Main/arduinoBoardUno target="_blank">Arduino</a><br>
+							Waterproof Temperature Sensor (DS18B20) &nbsp;<a href="https://www.sparkfun.com/products/11050" target="_blank">Sparkfun</a><br>
+							DC Controlled AC Power Switch (PowerSwitch Tail II)&nbsp;<a href="https://www.sparkfun.com/products/10747" target="_blank">Sparkfun</a><br>
+							White on Blue LCD w/Backlight (microtivity IM161)&nbsp;<a href="http://www.amazon.com/dp/B0059H60SK/ref=pe_175190_21431760_M3T1_ST1_dp_2" target="_blank">Amazon</a><br>
+							Diode (1N4004 Should be included in LCD order)<br>
+							10kOhm Potentiometer (Should be included in LCD order)<br>
+							Miscellaneous wire<br>
+							Breadboard<br>
+							Soldering Iron<br>
+							Simple Crockpot<br>
+					
+							</DD></p>
+					
+							<p><h3>Setup/Wiring:</h3>
+							<DD><p>The temperature probe did not come ready to be plugged into the breadboard directly out of the box.
+							I simply striped the wires back and soldered the from the temperature probe to a single core wire.
+							This allowed me to plug the temperature probe directly into the breadboard. (Red: +Vdd, White/Green: Data, Black: GND)</p>
+					
+							<img src="projects/SousVide/tempprobe.jpg" width="50%">
+						
+							<p>The LCD screen also needed to be soldered to the male/male header that was included in box. Pictures seen below.</p>
+						
+							<img src="projects/SousVide/screen1.jpg" width="50%"><br>
+							<img src="projects/SousVide/screen2.jpg" width="50%"><br>
+						
+						<p>To wire this circuit I am using 8 of the digital pins on the Arduino MicroController. 6 of those being used to control the 
+							LCD, 1 used to as the Data input for the temperature probe, and 1 used to control the AC power switch. Below are the connection
+							tables for my set-up. On the Power Switch Tail II, the Ground connection (pin 3) is connected internally to the AC side electrical 
+							safety ground (the green conductor) and can be used if needed.
+							<a href="http://www.powerswitchtail.com/Documents/PST%20II%20product%20insert,%20Aug%202012.pdf" target="_blank">Source</a></p>
+						
+							<table id="LCD_Terminals">
+								<tr>
+									<th>LCD Terminal</th>
+									<th>Connection</th>
+								</tr>
+								<tr>
+									<td>Vss</td>
+									<td>GND</td>
+								</tr>
+								<tr>
+									<td>Vdd</td>
+									<td>+5V</td>
+								</tr>
+								<tr> 
+									<td>Vo</td>
+									<td>Pot.</td>
+								</tr>
+								<tr>
+									<td>RS</td>
+									<td>Digital 2</td>
+								</tr>
+								<tr>
+									<td>R/W</td>
+									<td>GND</td>
+								</tr>
+								<tr>
+									<td>E</td>
+									<td>Digital 3</td>
+								</tr>
+								<tr>
+									<td>D0-D3</td>
+									<td>GND</td>
+								</tr>
+								<tr>
+									<td>D4-D7</td>
+									<td>Digital 4-7</td>
+								</tr>
+								<tr>
+									<td>A</td>
+									<td>Diode</td>
+								</tr>
+								<tr>
+									<td>K</td>
+									<td>GND</td>
+								</tr>
+								
+							</table>
+							<div id="vert" class="vertical1">&nbsp;&nbsp;</div>
+							<table id="Power Switch">
+								<tr>
+									<th>Pwr Sw Tail II</th>
+									<th>Connection</th>
+								</tr>
+								<tr>
+									<td>+in</td>
+									<td>Digital 8</td>
+								</tr>
+								<tr>
+									<td>-in</td>
+									<td>GND</td>
+								</tr>
+								<tr>
+									<td>Ground</td>
+									<td>No Connection</td>
+								</tr>
+							</table>
+							<div id="vert" class="vertical1">&nbsp;&nbsp;</div>
+							<table id="Temp Probe">
+								<tr>
+									<th>DS18B20</th>
+									<th>Connection</th>
+								</tr>
+								<tr>
+									<td>Vdd</td>
+									<td>+5V</td>
+								</tr>
+								<tr>
+									<td>Data</td>
+									<td>Digital 8<br>Pull-Up Net.</td>
+								</tr>
+								<tr>
+									<td>GND</td>
+									<td>GND</td>
+								</tr>
+							</table><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+							
+						<br><p>Finally, an overall schematic for the circuit.</p>
+						
+						<img src="projects/SousVide/wiringdiagram.jpg" width="95%">
+						</dd>
+						<p><h3>Code:</h3></p>
+						<dd>
+						<iframe src="projects/SousVide/Sous_Vide.txt" width="700" height="400" style="Background-color:white"></iframe><br>
+						
+<<<<<<< HEAD
+						
+						<a href="https://github.com/jeff-grindel/projects">Source Code</a><br>
+						
+=======
+						<a href="projects/SousVide/Sous_Vide.txt">Source Code</a><br>
+>>>>>>> Added full website
+						</dd>
+						<h3>Final Assembly:</h3>
+						<DD><p>After loading the code on the Arduino Microcontroller and wiring everything up according to the schematic, the room temperature 
+						   was able to be displayed on the LCD. 
+						</p>
+						
+						<img src="projects/SousVide/Overview0.jpg" width="50%">
+						
+<<<<<<< HEAD
+						<p>A simple way to test the switching of the Power Tall 2 was to simply set the temperature threshold in the code to a low number (I used around 80)
+=======
+						<p>A simple was to test the switching of the Power Tall 2 was to simply set the temperature threshold in the code to a low number (I used around 80)
+>>>>>>> Added full website
+					       and heat up the temperature probe by rubbing it and seeing if the red LED on the module turned off. This would indicate that there was no 
+						   AC power flowing through the PowerSwitch. Once satisfied with everything, it was time to hook everything up and start cooking.
+						</DD></p>
+						<h3>Cooking:</h3>
+						<DD><p>Instead of a crockpot I used a simple water boiler to heat the water. This accomplished the same goal, but the simpler the heating device 
+						is the easier it is going to be able to maintain a steady temperature throughout the cook. Below is the image of the final setup with the power of the 
+						water boiler plugged into the female port of the Power Tall 2 and the male port plugged into the power strip. My battery pack that came with my Arduino 
+						had died, so I simply used the USB cord and my cell phone charger to power the Arduino.
+						</p>
+						
+						<img src="projects/SousVide/Overview2.jpg" width="50%">
+						
+						<p>In order for the meat to cook properly in the water bath, it needs to be in vacuum bag so that all the heat from the water is directly transferred 
+						to the meat. I seasoned the steak with a mix of salt, pepper, and a little bit of garlic powder and vacuum sealed the bad and put it in the water bath 
+						and left it along for 3 hours.
+						</p>
+						
+						<p>After the 3 hours of waiting, I took the meet out and finished it on the stove with heated up Olive Oil and 
+						   butter to get a sear on the outside to add a little bit more flavor. After it was seared to perfection, I obtained a perfectly medium-rare steak that 
+						   wasn't overcooked.
+						</p>
+						
+						<img src="projects/SousVide/Steak3.jpg" width="50%">
+						</DD>
+						<h3>Next Steps:</h3>
+						<DD><p>As far as Sous Vide cooking, I am definitely looking forward to trying out different recipes and different types of meat. I am going to keep this 
+						schematic close by, but for now I am probably going to disassemble this project so I can move on to the next one. Stay tuned for more.
+						</p>
+						
+						<a href="projects.html"><br><b>Back...</b></a>
+						
+						</DD></p>
+		
+						
+		
+						<br><a href="#Top"><br>Top</a>
+					</fieldset>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="shadow">
+<<<<<<< HEAD
+				<p>Jeff Grindel 2013</p>
+=======
+				<p>Jeff Grindel 2012</p>
+>>>>>>> Added full website
+			</div>
+		</footer>
+	</body>
+</html>

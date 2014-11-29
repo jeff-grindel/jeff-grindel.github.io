@@ -1,0 +1,1300 @@
+Checking out Encounter license ...
+Encounter_Digital_Impl_Sys_XL 10.1 license checkout succeeded.
+You can run 2 CPU jobs with the base license that is currently checked out.
+If required, use the setMultiCpuUsage command to enable multi-CPU processing.
+This Encounter release has been compiled with OA version 22.04-p013.
+
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2011.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: Encounter v10.13-s292_1 (32bit) 08/15/2012 15:12 (Linux 2.6)
+@(#)CDS: NanoRoute v10.13-s033 NR120726-2234/10_10_USR3-UB (database version 2.30, 132.4.1) {superthreading v1.16}
+@(#)CDS: CeltIC v10.13-s064_1 (32bit) 06/28/2012 06:48:30 (Linux 2.6.9-89.0.19.ELsmp)
+@(#)CDS: AAE 10.13-s008 (32bit) 08/15/2012 (Linux 2.6.9-89.0.19.ELsmp)
+@(#)CDS: CTE 10.13-s020_1 (32bit) Aug 15 2012 06:35:34 (Linux 2.6.9-89.0.19.ELsmp)
+@(#)CDS: CPE v10.13-s240
+--- Starting "Encounter v10.13-s292_1" on Mon Nov 26 14:18:10 2012 (mem=46.1M) ---
+--- Running on saturn.ece.iit.edu (x86_64 w/Linux 2.6.18-308.el5) ---
+This version was compiled on Wed Aug 15 15:12:02 PDT 2012.
+Set DBUPerIGU to 1000.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+Sourcing tcl/tk file "encounter.tcl" ...
+<CMD> loadConfig ./encounter.conf
+Reading config file - ./encounter.conf
+**WARN: (ENCEXT-1085):	Option 'rda_Input(ui_res_scale)' used in configuration file './encounter.conf' is obsolete. The name will be converted into new format automatically if design is saved and then restored. Alternatively, update the configuration file to use names 'rda_Input(ui_preRoute_res)' and/or 'rda_Input(ui_postRoute_res)' for resistance scale factors to be used at preRoute/postRoute stages of the design . The obsolete name works in this release. But to avoid this warning and to ensure compatibility with future releases, update this option name.
+
+Loading Lef file /apps/FreePDK45/osu_soc/lib/files/gscl45nm.lef...
+**WARN: (ENCLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_POLY', 
+Set DBUPerIGU to M2 pitch 380.
+
+Power Planner/ViaGen version 8.1.46 promoted on 02/17/2009.
+viaInitial starts at Mon Nov 26 14:18:10 2012
+viaInitial ends at Mon Nov 26 14:18:10 2012
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist 'adder7_8.vh'
+
+*** Memory Usage v#1 (Current mem = 211.359M, initial mem = 46.066M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:01.0, mem=211.4M) ***
+Set top cell to adder7_8.
+Reading common timing library '/apps/FreePDK45/osu_soc/lib/files/gscl45nm.tlf' ...
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'AND2X1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'B' of cell 'AND2X1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'AND2X1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'AND2X2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'B' of cell 'AND2X2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'AND2X2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'AOI21X1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'B' of cell 'AOI21X1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'C' of cell 'AOI21X1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'AOI21X1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'AOI22X1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'B' of cell 'AOI22X1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'C' of cell 'AOI22X1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'D' of cell 'AOI22X1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'AOI22X1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'BUFX2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'BUFX2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'BUFX4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'BUFX4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'CLKBUF1' is not defined in the library.
+Message <TECHLIB-436> has exceeded the message display limit of '20'. setMessageLimit/set_message_limit sets the limit. unsetMessageLimit/unset_message_limit can be used to reset this.
+ read 31 cells in library 'gscl45nm' 
+*** End library_loading (cpu=0.00min, mem=0.4M, fe_cpu=0.05min, fe_mem=211.8M) ***
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell adder7_8 ...
+*** Netlist is unique.
+Set DBUPerIGU to techSite CoreSite width 760.
+** info: there are 34 modules.
+** info: there are 294 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 213.914M, initial mem = 46.066M) ***
+CTE reading timing constraint file 'adder7_8.sdc' ...
+**WARN: (TCLCMD-1142):	Virtual clock 'vclk' is being created with no source objects. (File adder7_8.sdc, Line 66).
+
+INFO (CTE): read_dc_script finished with  1 WARNING
+WARNING (CTE-25): Line: 8 of File adder7_8.sdc : Skipped unsupported command: set_units
+
+
+*** Read timing constraints (cpu=0:00:00.0 mem=218.8M) ***
+Total number of combinational cells: 25
+Total number of sequential cells: 4
+Total number of tristate cells: 2
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX2 BUFX4
+Total number of usable buffers: 2
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INVX2 INVX1 INVX4 INVX8
+Total number of usable inverters: 4
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: CLKBUF1 CLKBUF2 CLKBUF3
+Total number of identified usable delay cells: 3
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+*info: set bottom ioPad orient R0
+Horizontal Layer M1 offset = 190 (guessed)
+Vertical Layer M2 offset = 190 (guessed)
+Suggestion: specify LAYER OFFSET in LEF file
+Reason: hard to extract LAYER OFFSET from standard cells
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Input Pin Transition Delay as 120 ps.
+PreRoute Cap Scale Factor :        1.00
+PreRoute Res Scale Factor :        1.00
+PostRoute Cap Scale Factor :       1.00
+PostRoute Res Scale Factor :       1.00
+PostRoute XCap Scale Factor :      1.00
+
+PreRoute Clock Cap Scale Factor :  1.00	[Derived from postRoute_cap (effortLevel low)]
+PreRoute Clock Res Scale Factor :  1.00	[Derived from postRoute_res (effortLevel low)]
+PostRoute Clock Cap Scale Factor : 1.00	[Derived from postRoute_cap (effortLevel low)]
+PostRoute Clock Res Scale Factor : 1.00	[Derived from postRoute_res (effortLevel low)]
+**WARN: (ENCOPT-3465):	The buffer cells were automatically identified. The command setBufFootPrint is ignored. If you want to force the tool to honor this setting, you have to load a footprint file through the loadFootPrint command.
+**WARN: (ENCOPT-3466):	The inverter cells were automatically identified. The command setInvFootPrint is ignored. If you want to force the tool to honor this setting, you have to load a footprint file through the loadFootPrint command.
+**WARN: (ENCOPT-3467):	The delay cells were automatically identified. The command setDelayFootPrint is ignored. If you want to force the tool to honor this setting, you have to load a footprint file through the loadFootPrint command.
+**WARN: (ENCSYT-709):	The next major release of EDI (11.1) will use the
+Multi-Mode/Multi-Corner (MMMC) architecture exclusively for configuration and
+control of some software features. The current configuration will continue to
+work in this release. But for compatibility with the future releases you
+should migrate your design to an MMMC style configuration. You can refer to
+the What's New document for this release for additional information on the
+11.1 migration to MMMC. In addition, you can run loadConfig with the
+-showEolWarnings option to identify specific command and configuration
+options that will no longer be supported.
+<CMD> commitConfig
+**WARN: (ENCSYT-3034):	commitConfig can only be run once per session.
+ This command is skipped since it's already run by user or by loadConfig command implicitly.
+<CMD> floorPlan -r 1.0 0.6 40.05 40.8 40.05 42
+Adjusting Core to Left to: 40.0900. Core to Bottom to: 40.8500.
+Horizontal Layer M1 offset = 190 (guessed)
+Vertical Layer M2 offset = 190 (guessed)
+Suggestion: specify LAYER OFFSET in LEF file
+Reason: hard to extract LAYER OFFSET from standard cells
+**WARN: (ENCFP-325):	After proportional resize, all pre-routed wires will be removed.
+<CMD> addRing -spacing_bottom 9.9 -width_left 9.9 -width_bottom 9.9 -width_top 9.9 -spacing_top 9.9 -layer_bottom metal1 -width_right 9.9 -around core -center 1 -layer_top metal1 -spacing_right 9.9 -spacing_left 9.9 -layer_right metal2 -layer_left metal2 -offset_top 9.9 -offset_bottom 9.9 -offset_left 9.9 -offset_right 9.9 -nets { gnd vdd }
+
+The power planner created 8 wires.
+*** Ending Ring Generation (totcpu=0:00:00.0, real=0:00:00.0, mem=219.8M) ***
+<CMD_INTERNAL> amoebaPlace
+**WARN: (ENCSP-9007):	The command 'amoebaPlace' is obsolete. It has been replaced by 'placeDesign'.
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+Extracting macro/IO cell pins and blockage ...... 
+Pin and blockage extraction finished
+*** Starting "NanoPlace(TM) placement v#1 (mem=219.8M)" ...
+Options: clkGateAware ignoreScan ignoreSpare pinGuide gpeffort=medium 
+**WARN: (ENCSP-9042):	Scan chains were not defined, -ignoreScan option will be ignored. 
+Please first define the scan chains before using this option.
+#std cell=294 #block=0 (0 floating + 0 preplaced) #ioInst=0 #net=351 #term=898 #term/net=2.56, #fixedIo=0, #floatIo=0, #fixedPin=0, #floatPin=65
+stdCell: 294 single + 0 double + 0 multi
+Total standard cell length = 0.3258 (mm), area = 0.0008 (mm^2)
+**Info: (ENCSP-307): Design contains fractional 20 cells.
+Average module density = 0.600.
+Density for the design = 0.600.
+       = stdcell_area 858 (805 um^2) / alloc_area 1428 (1340 um^2).
+Pin Density = 1.047.
+            = total # of pins 898 / total Instance area 858.
+Checking spec file integrity...
+Clock gating cells determined by native netlist tracing.
+Iteration  1: Total net bbox = 3.764e+03 (3.76e+03 0.00e+00)
+              Est.  stn bbox = 3.764e+03 (3.76e+03 0.00e+00)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 219.8M
+Iteration  2: Total net bbox = 4.232e+03 (2.72e+03 1.51e+03)
+              Est.  stn bbox = 4.232e+03 (2.72e+03 1.51e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 219.8M
+Iteration  3: Total net bbox = 4.581e+03 (2.82e+03 1.77e+03)
+              Est.  stn bbox = 4.581e+03 (2.82e+03 1.77e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 219.8M
+Iteration  4: Total net bbox = 5.060e+03 (2.79e+03 2.27e+03)
+              Est.  stn bbox = 5.060e+03 (2.79e+03 2.27e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 219.8M
+Iteration  5: Total net bbox = 5.127e+03 (2.62e+03 2.51e+03)
+              Est.  stn bbox = 5.127e+03 (2.62e+03 2.51e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 219.8M
+Iteration  6: Total net bbox = 5.248e+03 (2.67e+03 2.58e+03)
+              Est.  stn bbox = 5.248e+03 (2.67e+03 2.58e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 219.8M
+Iteration  7: Total net bbox = 5.349e+03 (2.77e+03 2.58e+03)
+              Est.  stn bbox = 5.349e+03 (2.77e+03 2.58e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 219.8M
+Iteration  8: Total net bbox = 5.519e+03 (2.77e+03 2.75e+03)
+              Est.  stn bbox = 5.519e+03 (2.77e+03 2.75e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 219.8M
+Iteration  9: Total net bbox = 5.768e+03 (2.91e+03 2.85e+03)
+              Est.  stn bbox = 5.768e+03 (2.91e+03 2.85e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 219.8M
+*** cost = 5.768e+03 (2.91e+03 2.85e+03) (cpu for global=0:00:00.1) real=0:00:00.0***
+Info: 0 clock gating cells identified, 0 (on average) moved
+**Info: (ENCSP-307): Design contains fractional 20 cells.
+Starting refinePlace ...
+move report: placeLevelShifters moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+  Spread Effort: high, pre-route mode.
+Finished Phase I. CPU Time = 0:00:00.1, Real Time = 0:00:00.0
+move report: preRPlace moves 49 insts, mean move: 0.74 um, max move: 1.90 um
+	max move on inst (a1/a2/U5): (59.09, 70.49) --> (60.99, 70.49)
+Placement tweakage begins.
+wire length = 5.819e+03 = 2.934e+03 H + 2.885e+03 V
+wire length = 5.528e+03 = 2.716e+03 H + 2.812e+03 V
+Placement tweakage ends.
+move report: tweak moves 180 insts, mean move: 3.55 um, max move: 12.73 um
+	max move on inst (U139): (63.65, 45.79) --> (71.44, 40.85)
+move report: rPlace moves 35 insts, mean move: 0.19 um, max move: 0.19 um
+	max move on inst (a6/a6/U2): (72.20, 70.49) --> (72.01, 70.49)
+move report: overall moves 184 insts, mean move: 3.46 um, max move: 12.54 um
+	max move on inst (U139): (63.65, 45.79) --> (71.25, 40.85)
+Statistics of distance of Instance movement in detailed placement:
+  maximum (X+Y) =        12.54 um
+  inst (U139) with max move: (63.65, 45.79) -> (71.25, 40.85)
+  mean    (X+Y) =         3.46 um
+Total instances flipped for legalization: 56
+Total instances moved : 184
+*** cpu=0:00:00.1   mem=220.1M  mem(used)=0.4M***
+Total net length = 5.501e+03 (2.715e+03 2.786e+03) (ext = 3.068e+03)
+*** End of Placement (cpu=0:00:00.2, real=0:00:00.0, mem=220.1M) ***
+**Info: (ENCSP-307): Design contains fractional 20 cells.
+default core: bins with density >  0.75 =    0 % ( 0 / 4 )
+Starting IO pin assignment...
+Completed IO pin assignment.
+<CMD> sroute -noBlockPins -noPadRings
+**WARN: (ENCSR-4053):	SRoute option "-noBlockPins" is obsolete and has been replaced by "-connect". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "-connect".
+**WARN: (ENCSR-4053):	SRoute option "-noPadRings" is obsolete and has been replaced by "-connect". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "-connect".
+*** Begin SPECIAL ROUTE on Mon Nov 26 14:18:11 2012 ***
+Sroute/fcroute version 8.1.46 promoted on 02/17/2009.
+SPECIAL ROUTE ran on directory: /home/jgrindel/project/part1
+SPECIAL ROUTE ran on machine: saturn.ece.iit.edu (Linux 2.6.18-308.el5 Opteron 2.60Ghz)
+
+Begin option processing ...
+(from .sroute_10699.conf) srouteConnectPowerBump set to false
+(from .sroute_10699.conf) routeSpecial set to true
+(from .sroute_10699.conf) srouteConnectBlockPin set to false
+(from .sroute_10699.conf) srouteFollowCorePinEnd set to 3
+(from .sroute_10699.conf) srouteJogControl set to "preferWithChanges differentLayer"
+(from .sroute_10699.conf) sroutePadPinAllPorts set to true
+(from .sroute_10699.conf) sroutePreserveExistingRoutes set to true
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 470.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+Read in 22 layers, 10 routing layers, 1 overlap layer
+Read in 33 macros, 6 used
+Read in 294 components
+  294 core components: 0 unplaced, 294 placed, 0 fixed
+Read in 65 physical pins
+  65 physical pins: 0 unplaced, 65 placed, 0 fixed
+Read in 65 nets
+Read in 2 special nets, 2 routed
+Read in 653 terminals
+Begin power routing ...
+**WARN: (ENCSR-1256):	Net vdd does not have CORE class pad pins to be routed.
+	Please check net list or port class.
+Net vdd does not have AREAIO class pad pins to be routed.
+	Please check net list or port class.
+**WARN: (ENCSR-1256):	Net gnd does not have CORE class pad pins to be routed.
+	Please check net list or port class.
+Net gnd does not have AREAIO class pad pins to be routed.
+	Please check net list or port class.
+CPU time for FollowPin 0 seconds
+CPU time for FollowPin 0 seconds
+  Number of IO ports routed: 0
+  Number of Stripe ports routed: 0
+  Number of Core ports routed: 30
+  Number of Followpin connections: 15
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 506.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 65 io pins ...
+ Updating DB with 16 via definition ...
+
+sroute post-processing starts at Mon Nov 26 14:18:11 2012
+The viaGen is rebuilding shadow vias for net gnd.
+sroute post-processing ends at Mon Nov 26 14:18:11 2012
+
+sroute post-processing starts at Mon Nov 26 14:18:11 2012
+The viaGen is rebuilding shadow vias for net vdd.
+sroute post-processing ends at Mon Nov 26 14:18:11 2012
+sroute: Total CPU time used = 0:0:0
+sroute: Total Real time used = 0:0:0
+sroute: Total Memory used = 1.61 megs
+sroute: Total Peak Memory used = 221.88 megs
+<CMD> trialRoute
+*** Starting trialRoute (mem=221.9M) ***
+
+There are 0 pin guide points passed to trialRoute.
+Options:  -noPinGuide
+
+routingBox: (0 0) (237865 234860)
+coreBox:    (80180 81700) (157765 150860)
+
+Phase 1a route (0:00:00.0 222.5M):
+Est net length = 5.290e+03um = 2.503e+03H + 2.788e+03V
+Usage: (2.3%H 2.3%V) = (2.762e+03um 4.554e+03um) = (2172 1995)
+Obstruct: 0 = 0 (0.0%H) + 0 (0.0%V)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Phase 1b route (0:00:00.0 223.5M):
+Usage: (2.3%H 2.3%V) = (2.755e+03um 4.554e+03um) = (2165 1995)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Phase 1c route (0:00:00.0 223.5M):
+Usage: (2.3%H 2.3%V) = (2.755e+03um 4.554e+03um) = (2165 1995)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Phase 1d route (0:00:00.0 223.5M):
+Usage: (2.3%H 2.3%V) = (2.755e+03um 4.554e+03um) = (2165 1995)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Phase 1e route (0:00:00.0 224.2M):
+Usage: (2.3%H 2.3%V) = (2.755e+03um 4.554e+03um) = (2165 1995)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Usage: (2.3%H 2.3%V) = (2.755e+03um 4.554e+03um) = (2165 1995)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Congestion distribution:
+
+Remain	cntH		cntV
+--------------------------------------
+--------------------------------------
+  7:	0	 0.00%	11	 0.25%
+  8:	0	 0.00%	22	 0.49%
+  9:	0	 0.00%	82	 1.84%
+ 10:	0	 0.00%	143	 3.22%
+ 11:	0	 0.00%	268	 6.03%
+ 12:	0	 0.00%	433	 9.74%
+ 13:	0	 0.00%	484	10.89%
+ 14:	0	 0.00%	258	 5.80%
+ 15:	0	 0.00%	369	 8.30%
+ 16:	0	 0.00%	162	 3.64%
+ 17:	1	 0.02%	216	 4.86%
+ 18:	82	 1.84%	52	 1.17%
+ 19:	868	19.52%	284	 6.39%
+ 20:	3495	78.61%	1662	37.38%
+
+Global route (cpu=0.0s real=0.0s 223.2M)
+Phase 1l route (0:00:00.0 223.2M):
+
+
+*** After '-updateRemainTrks' operation: 
+
+Usage: (2.3%H 2.3%V) = (2.780e+03um 4.597e+03um) = (2182 2013)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Congestion distribution:
+
+Remain	cntH		cntV
+--------------------------------------
+--------------------------------------
+  7:	0	 0.00%	12	 0.27%
+  8:	0	 0.00%	24	 0.54%
+  9:	0	 0.00%	80	 1.80%
+ 10:	0	 0.00%	143	 3.22%
+ 11:	0	 0.00%	269	 6.05%
+ 12:	0	 0.00%	433	 9.74%
+ 13:	0	 0.00%	482	10.84%
+ 14:	0	 0.00%	258	 5.80%
+ 15:	0	 0.00%	369	 8.30%
+ 16:	0	 0.00%	162	 3.64%
+ 17:	1	 0.02%	216	 4.86%
+ 18:	84	 1.89%	52	 1.17%
+ 19:	867	19.50%	284	 6.39%
+ 20:	3494	78.59%	1662	37.38%
+
+
+
+*** Completed Phase 1 route (0:00:00.0 221.9M) ***
+
+
+Total length: 5.654e+03um, number of vias: 1574
+M1(H) length: 6.946e+01um, number of vias: 833
+M2(V) length: 2.806e+03um, number of vias: 704
+M3(H) length: 2.502e+03um, number of vias: 27
+M4(V) length: 2.242e+02um, number of vias: 9
+M5(H) length: 1.198e+00um, number of vias: 1
+M6(V) length: 5.207e+01um, number of vias: 0
+M7(H) length: 0.000e+00um, number of vias: 0
+M8(V) length: 0.000e+00um, number of vias: 0
+M9(H) length: 0.000e+00um, number of vias: 0
+M10(V) length: 0.000e+00um
+*** Completed Phase 2 route (0:00:00.0 221.9M) ***
+
+*** Finished all Phases (cpu=0:00:00.1 mem=221.9M) ***
+Peak Memory Usage was 227.2M 
+*** Finished trialRoute (cpu=0:00:00.1 mem=221.9M) ***
+
+<CMD> buildTimingGraph
+<CMD_INTERNAL> setCteReport
+<CMD> report_timing -nworst  10 -net > timing.rep.1.placed
+Using new Cte TW Api base...#################################################################################
+# Design Stage: PreRoute
+# Design Mode: 90nm
+# Analysis Mode: non-MMMC non-OCV
+# Extraction Mode: default
+# Delay Calculation Options: engine=default signOff=true SIAware=false(opt)
+# Switching Delay Calculation Engine to feDC
+#################################################################################
+Extraction called for design 'adder7_8' of instances=294 and nets=353 using extraction engine 'preRoute' .
+**WARN: (ENCEXT-3530):	Use of command 'setDesignMode -process <process_node>' prior to extraction is recommended for maximum accuracy and optimal automatic threshold setting.
+Default RC Extraction called for design adder7_8.
+**WARN: (ENCEXT-6166):	Using capacitance table file without EXTENDED section is not recommended and will result in lower accuracy for clock nets in preRoute extraction and for all nets when using postRoute extraction -effortLevel low. Regeneration of full capacitance table is recommended.
+RCMode: Default
+Capacitance Scaling Factor   : 1.00000
+Resistance Scaling Factor    : 1.00000
+Clock Cap. Scaling Factor    : 1.00000
+Clock Res Scaling Factor     : 1.00000
+Shrink Factor                : 1.00000
+Default RC extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Default RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 222.379M)
+Calculate delays in Single mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 228.6M, InitMEM = 228.6M)
+Start delay calculation (mem=228.645M)...
+**WARN: (ENCEXT-2882):	Unable to find resistance for via 'M2_M1_via' in capacitance table or LEF files. Check the capacitance table and LEF files. Assigning default value of 4.0 ohms.
+**WARN: (ENCEXT-2882):	Unable to find resistance for via 'M3_M2_via' in capacitance table or LEF files. Check the capacitance table and LEF files. Assigning default value of 4.0 ohms.
+**WARN: (ENCTS-403):	Delay calculation was forced to extrapolate table data outside of the characterized range. In some cases, extrapolation can reduce the accuracy of the delay calculation.  You can enable more detailed reporting of these cases by enabling the command 'setDelayCalMode -reportOutBound'.
+**WARN: (ENCEXT-2882):	Unable to find resistance for via 'M4_M3_via' in capacitance table or LEF files. Check the capacitance table and LEF files. Assigning default value of 4.0 ohms.
+**WARN: (ENCEXT-2882):	Unable to find resistance for via 'M5_M4_via' in capacitance table or LEF files. Check the capacitance table and LEF files. Assigning default value of 4.0 ohms.
+**WARN: (ENCEXT-2882):	Unable to find resistance for via 'M6_M5_via' in capacitance table or LEF files. Check the capacitance table and LEF files. Assigning default value of 4.0 ohms.
+Delay calculation completed. (cpu=0:00:00.0 real=0:00:00.0 mem=232.652M 0)
+*** CDM Built up (cpu=0:00:00.0  real=0:00:00.0  mem= 232.7M) ***
+<CMD> setOptMode -mediumEffort -fixDRC -addPortAsNeeded
+**WARN: (ENCTCM-70):	Option "-fixDRC" for command setOptMode is obsolete and has been replaced by "-fixDrc true". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "-fixDrc true".
+**WARN: (ENCTCM-70):	Option "-addPortAsNeeded" for command setOptMode is obsolete and has been replaced by "-addPortAsNeeded true". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "-addPortAsNeeded true".
+<CMD_INTERNAL> initECO ./ipo1.txt
+**ERROR: (ENCOPT-513):	'fixSetupViolation' is obsolete. Use the 'optDesign' command instead
+<CMD_INTERNAL> endECO
+<CMD> buildTimingGraph
+<CMD_INTERNAL> setCteReport
+<CMD> report_timing -nworst  10 -net > timing.rep.2.ipo1
+<CMD> createClockTreeSpec -output encounter.cts -bufFootprint buf -invFootprint inv
+**WARN: (ENCTCM-77):	Option "-bufFootprint" for command createClockTreeSpec is obsolete and will be removed in future release. The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+**WARN: (ENCTCM-77):	Option "-invFootprint" for command createClockTreeSpec is obsolete and will be removed in future release. The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+Checking spec file integrity...
+
+******* createClockTreeSpec begin *******
+Options:  -output encounter.cts -bufFootprint buf -invFootprint inv 
+**WARN: (ENCCK-412):	-bufFootprint is ignored in createClockTreeSpec since in this release the buffer footprint name is automatically generated and provided to this command. If you want to specify a specific list of cells to be used by CTS, please use -bufferList option.
+**WARN: (ENCCK-415):	-invFootprint is ignored in createClockTreeSpec while dbgGPSAutoCellFunction is set.
+CTE Mode
+New Clock Spec Generation is ON.
+New CTE tracing is ON.
+Handle Multi Mode on mixed active views: default_view_hold default_view_setup.
+*Info: set_clock_latency is converted to MacroModel and saved in CTS spec file
+Total 0 clock roots are extracted.
+createClockTreeSpec invoking cleanupSpecifyClockTree
+
+Reading clock tree spec file 'encounter.cts' ...
+
+Total Macromodels Extracted = 0
+
+***** !! NOTE !! *****
+
+CTS treats D-pins and I/O pins as non-synchronous pins by default.
+If you want to change the behavior, you need to use the SetDPinAsSync
+or SetIoPinAsSync statement in the clock tree specification file,
+or use the setCTSMode -traceDPinAsLeaf {true|false} command,
+or use the setCTSMode -traceIoPinAsLeaf {true|false} command
+before specifyClockTree command.
+
+*** End specifyClockTree (cpu=0:00:00.0, real=0:00:00.0, mem=238.5M) ***
+*** End createClockTreeSpec (cpu=0:00:00.0, real=0:00:00.0, mem=238.1M) ***
+<CMD> specifyClockTree -clkfile encounter.cts
+Checking spec file integrity...
+**WARN: (ENCCK-3217):	'specifyClockTree -clkfile' is obsolete. The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use 'specifyClockTree -file'.
+
+Reading clock tree spec file 'encounter.cts' ...
+
+Total Macromodels Extracted = 0
+
+***** !! NOTE !! *****
+
+CTS treats D-pins and I/O pins as non-synchronous pins by default.
+If you want to change the behavior, you need to use the SetDPinAsSync
+or SetIoPinAsSync statement in the clock tree specification file,
+or use the setCTSMode -traceDPinAsLeaf {true|false} command,
+or use the setCTSMode -traceIoPinAsLeaf {true|false} command
+before specifyClockTree command.
+
+*** End specifyClockTree (cpu=0:00:00.0, real=0:00:00.0, mem=238.1M) ***
+<CMD> ckSynthesis -rguide cts.rguide -report report.ctsrpt -macromodel report.ctsmdl -fix_added_buffers
+Checking spec file integrity...
+**WARN: (ENCCK-313):	You have not specified a clock tree. Use the specifyClockTree command to do so.
+*** End ckSynthesis (cpu=0:00:00.0, real=0:00:00.0, mem=238.1M) ***
+<CMD> trialRoute -highEffort -guide cts.rguide
+*** Starting trialRoute (mem=238.1M) ***
+
+There are 0 pin guide points passed to trialRoute.
+Options:  -highEffort -guide cts.rguide -noPinGuide
+
+routingBox: (0 0) (237865 234860)
+coreBox:    (80180 81700) (157765 150860)
+**ERROR: (ENCSYUTIL-96):	Cannot open (for read) Routing Guide file: "cts.rguide".
+Reason for error: No such file or directory.
+Phase 0 route (using Routing Guide) (0:00:00.0 239.4M):
+
+Phase 1a route (0:00:00.0 239.4M):
+Est net length = 5.290e+03um = 2.503e+03H + 2.788e+03V
+Usage: (2.3%H 2.3%V) = (2.762e+03um 4.554e+03um) = (2172 1995)
+Obstruct: 0 = 0 (0.0%H) + 0 (0.0%V)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Phase 1b route (0:00:00.0 240.6M):
+Usage: (2.3%H 2.3%V) = (2.755e+03um 4.554e+03um) = (2165 1995)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Phase 1c route (0:00:00.0 240.6M):
+Usage: (2.3%H 2.3%V) = (2.755e+03um 4.554e+03um) = (2165 1995)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Phase 1d route (0:00:00.0 240.6M):
+Usage: (2.3%H 2.3%V) = (2.755e+03um 4.554e+03um) = (2165 1995)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Phase 1e route (0:00:00.0 241.3M):
+Usage: (2.3%H 2.3%V) = (2.755e+03um 4.554e+03um) = (2165 1995)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Usage: (2.3%H 2.3%V) = (2.755e+03um 4.554e+03um) = (2165 1995)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Congestion distribution:
+
+Remain	cntH		cntV
+--------------------------------------
+--------------------------------------
+  7:	0	 0.00%	11	 0.25%
+  8:	0	 0.00%	22	 0.49%
+  9:	0	 0.00%	82	 1.84%
+ 10:	0	 0.00%	143	 3.22%
+ 11:	0	 0.00%	268	 6.03%
+ 12:	0	 0.00%	433	 9.74%
+ 13:	0	 0.00%	484	10.89%
+ 14:	0	 0.00%	258	 5.80%
+ 15:	0	 0.00%	369	 8.30%
+ 16:	0	 0.00%	162	 3.64%
+ 17:	1	 0.02%	216	 4.86%
+ 18:	82	 1.84%	52	 1.17%
+ 19:	868	19.52%	284	 6.39%
+ 20:	3495	78.61%	1662	37.38%
+
+Global route (cpu=0.0s real=0.0s 240.0M)
+Phase 1l route (0:00:00.0 240.0M):
+
+
+*** After '-updateRemainTrks' operation: 
+
+Usage: (2.3%H 2.3%V) = (2.780e+03um 4.597e+03um) = (2182 2013)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Congestion distribution:
+
+Remain	cntH		cntV
+--------------------------------------
+--------------------------------------
+  7:	0	 0.00%	12	 0.27%
+  8:	0	 0.00%	24	 0.54%
+  9:	0	 0.00%	80	 1.80%
+ 10:	0	 0.00%	143	 3.22%
+ 11:	0	 0.00%	269	 6.05%
+ 12:	0	 0.00%	433	 9.74%
+ 13:	0	 0.00%	482	10.84%
+ 14:	0	 0.00%	258	 5.80%
+ 15:	0	 0.00%	369	 8.30%
+ 16:	0	 0.00%	162	 3.64%
+ 17:	1	 0.02%	216	 4.86%
+ 18:	84	 1.89%	52	 1.17%
+ 19:	867	19.50%	284	 6.39%
+ 20:	3494	78.59%	1662	37.38%
+
+
+
+*** Completed Phase 1 route (0:00:00.0 238.1M) ***
+
+
+Total length: 5.654e+03um, number of vias: 1574
+M1(H) length: 6.946e+01um, number of vias: 833
+M2(V) length: 2.806e+03um, number of vias: 704
+M3(H) length: 2.502e+03um, number of vias: 27
+M4(V) length: 2.242e+02um, number of vias: 9
+M5(H) length: 1.198e+00um, number of vias: 1
+M6(V) length: 5.207e+01um, number of vias: 0
+M7(H) length: 0.000e+00um, number of vias: 0
+M8(V) length: 0.000e+00um, number of vias: 0
+M9(H) length: 0.000e+00um, number of vias: 0
+M10(V) length: 0.000e+00um
+*** Completed Phase 2 route (0:00:00.0 238.4M) ***
+
+*** Finished all Phases (cpu=0:00:00.1 mem=238.4M) ***
+Peak Memory Usage was 244.0M 
+*** Finished trialRoute (cpu=0:00:00.1 mem=238.4M) ***
+
+<CMD> extractRC
+Extraction called for design 'adder7_8' of instances=294 and nets=353 using extraction engine 'preRoute' .
+**WARN: (ENCEXT-3530):	Use of command 'setDesignMode -process <process_node>' prior to extraction is recommended for maximum accuracy and optimal automatic threshold setting.
+Default RC Extraction called for design adder7_8.
+**WARN: (ENCEXT-6166):	Using capacitance table file without EXTENDED section is not recommended and will result in lower accuracy for clock nets in preRoute extraction and for all nets when using postRoute extraction -effortLevel low. Regeneration of full capacitance table is recommended.
+RCMode: Default
+Capacitance Scaling Factor   : 1.00000
+Resistance Scaling Factor    : 1.00000
+Clock Cap. Scaling Factor    : 1.00000
+Clock Res Scaling Factor     : 1.00000
+Shrink Factor                : 1.00000
+Default RC extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Default RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 235.340M)
+<CMD> reportClockTree -postRoute -localSkew -report skew.post_troute_local.ctsrpt
+Checking spec file integrity...
+**WARN: (ENCCK-164):	No synthesized clock tree is found from the given parameters and clock specification file.
+*** End reportClockTree (cpu=0:00:00.0, real=0:00:00.0, mem=230.3M) ***
+<CMD> reportClockTree -postRoute -report report.post_troute.ctsrpt
+Checking spec file integrity...
+**WARN: (ENCCK-164):	No synthesized clock tree is found from the given parameters and clock specification file.
+*** End reportClockTree (cpu=0:00:00.0, real=0:00:00.0, mem=230.3M) ***
+<CMD> setAnalysisMode -setup -async -skew -autoDetectClockTree
+**WARN: (ENCTCM-70):	Option "-setup" for command setAnalysisMode is obsolete and has been replaced by "-checkType setup". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "-checkType setup".
+**WARN: (ENCTCM-70):	Option "-async" for command setAnalysisMode is obsolete and has been replaced by "-asyncChecks async". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "-asyncChecks async".
+**WARN: (ENCTCM-70):	Option "-skew" for command setAnalysisMode is obsolete and has been replaced by "-skew true". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "-skew true".
+**WARN: (ENCTCM-70):	Option "-autoDetectClockTree" for command setAnalysisMode is obsolete and has been replaced by "-clockPropagation autoDetectClockTree". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "-clockPropagation autoDetectClockTree".
+**WARN: (ENCSYC-1870):	setAnalysisMode -clockPropagation autoDetectClockTree not supported in CTE timing mode, mapping it to setAnalysisMode -clockPropagation sdcControl<CMD> buildTimingGraph
+<CMD_INTERNAL> setCteReport
+<CMD> report_timing -nworst  10 -net > timing.rep.3.cts
+Using new Cte TW Api base...#################################################################################
+# Design Stage: PreRoute
+# Design Mode: 90nm
+# Analysis Mode: non-MMMC non-OCV
+# Extraction Mode: default
+# Delay Calculation Options: engine=default signOff=true SIAware=false(opt)
+# Switching Delay Calculation Engine to feDC
+#################################################################################
+Calculate delays in Single mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 233.6M, InitMEM = 233.6M)
+Start delay calculation (mem=233.594M)...
+Delay calculation completed. (cpu=0:00:00.0 real=0:00:00.0 mem=233.594M 0)
+*** CDM Built up (cpu=0:00:00.0  real=0:00:00.0  mem= 233.6M) ***
+<CMD> setOptMode -highEffort -fixDrc -addPortAsNeeded -incrTrialRoute -restruct -topomap
+**WARN: (ENCTCM-70):	Option "-fixDrc" for command setOptMode is obsolete and has been replaced by "-fixDrc true". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "-fixDrc true".
+**WARN: (ENCTCM-70):	Option "-addPortAsNeeded" for command setOptMode is obsolete and has been replaced by "-addPortAsNeeded true". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "-addPortAsNeeded true".
+**WARN: (ENCTCM-70):	Option "-restruct" for command setOptMode is obsolete and has been replaced by "-restruct true". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "-restruct true".
+**WARN: (ENCTCM-70):	Option "-topomap" for command setOptMode is obsolete and has been replaced by "-topoMap true". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "-topoMap true".
+**WARN: (ENCTCM-70):	Option "-highEffort" for command setOptMode is obsolete and has been replaced by "-effort high". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "-effort high".
+<CMD_INTERNAL> initECO ipo2.txt
+<CMD> setExtractRCMode -default -assumeMetFill
+**WARN: (ENCEXT-1086):	Option '-default' is obsolete. Use '-engine preRoute' to set extraction engine. The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script and configuration file to use recommended convention.
+**WARN: (ENCEXT-3493):	Extraction mode changed by calling extraction setup command 'setExtractRCMode'. Therefore, parasitic data in the tool generated as per previous mode is deleted. Call of extractRC/spefIn will generate/bring parasitic data in the tool as per current mode.
+<CMD> extractRC
+Extraction called for design 'adder7_8' of instances=294 and nets=353 using extraction engine 'preRoute' .
+**WARN: (ENCEXT-3530):	Use of command 'setDesignMode -process <process_node>' prior to extraction is recommended for maximum accuracy and optimal automatic threshold setting.
+Default RC Extraction called for design adder7_8.
+**WARN: (ENCEXT-6166):	Using capacitance table file without EXTENDED section is not recommended and will result in lower accuracy for clock nets in preRoute extraction and for all nets when using postRoute extraction -effortLevel low. Regeneration of full capacitance table is recommended.
+RCMode: Default, with Assume Metal Fill 1.00
+Capacitance Scaling Factor   : 1.00000
+Resistance Scaling Factor    : 1.00000
+Clock Cap. Scaling Factor    : 1.00000
+Clock Res Scaling Factor     : 1.00000
+Shrink Factor                : 1.00000
+Default RC extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Default RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 233.848M)
+**ERROR: (ENCOPT-513):	'fixSetupViolation' is obsolete. Use the 'optDesign' command instead
+<CMD> setExtractRCMode -detail -assumeMetFill
+**WARN: (ENCEXT-1082):	Option '-detail' is obsolete. Use '-engine postRoute [-effortLevel low]' to set extraction engine, which is based on recommended convention '-engine postRoute [-effortLevel <low|medium|high|signoff>]'. The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script and configuration file to use recommended convention.
+**WARN: (ENCEXT-3493):	Extraction mode changed by calling extraction setup command 'setExtractRCMode'. Therefore, parasitic data in the tool generated as per previous mode is deleted. Call of extractRC/spefIn will generate/bring parasitic data in the tool as per current mode.
+**WARN: (ENCEXT-3410):	Option -assumeMetalFill is recommended only in default extraction mode. It will use the basic cap table instead of extnded cap table in detail or TQRC/IQRC mode.
+<CMD> extractRC
+Extraction called for design 'adder7_8' of instances=294 and nets=353 using extraction engine 'postRoute' at effort level 'low' .
+**WARN: (ENCEXT-3530):	Use of command 'setDesignMode -process <process_node>' prior to extraction is recommended for maximum accuracy and optimal automatic threshold setting.
+Detail RC Extraction called for design adder7_8.
+**WARN: (ENCEXT-6166):	Using capacitance table file without EXTENDED section is not recommended and will result in lower accuracy for clock nets in preRoute extraction and for all nets when using postRoute extraction -effortLevel low. Regeneration of full capacitance table is recommended.
+**WARN: (ENCEXT-3032):	Since cap. table file was not provided, it will be created internally with the following process info:
+* Layer Id             : 1 - M1
+      Thickness        : 0.6
+      Min Width        : 0.065
+      Layer Dielectric : 4.1
+* Layer Id             : 2 - M2
+      Thickness        : 0.6
+      Min Width        : 0.07
+      Layer Dielectric : 4.1
+* Layer Id             : 3 - M3
+      Thickness        : 0.6
+      Min Width        : 0.07
+      Layer Dielectric : 4.1
+* Layer Id             : 4 - M4
+      Thickness        : 0.6
+      Min Width        : 0.14
+      Layer Dielectric : 4.1
+* Layer Id             : 5 - M5
+      Thickness        : 0.6
+      Min Width        : 0.14
+      Layer Dielectric : 4.1
+* Layer Id             : 6 - M6
+      Thickness        : 0.6
+      Min Width        : 0.14
+      Layer Dielectric : 4.1
+* Layer Id             : 7 - M7
+      Thickness        : 0.6
+      Min Width        : 0.4
+      Layer Dielectric : 4.1
+* Layer Id             : 8 - M8
+      Thickness        : 0.6
+      Min Width        : 0.4
+      Layer Dielectric : 4.1
+* Layer Id             : 9 - M9
+      Thickness        : 0.6
+      Min Width        : 0.8
+      Layer Dielectric : 4.1
+* Layer Id             : 10 - M10
+      Thickness        : 1
+      Min Width        : 0.8
+      Layer Dielectric : 4.1
+extractDetailRC Option : -outfile ./adder7_8_YEP5KH_10699.rcdb.d  -basic -newAssumeMetFill
+Assumed metal fill uses the following parameters:
+              Active Spacing      Min. Width
+                [microns]         [microns]
+**WARN: (ENCEXT-3087):	Fill active spacing for layer M1 is not specified, it will use  0.600 microns.
+  Layer M1        0.600             0.400 
+**WARN: (ENCEXT-3087):	Fill active spacing for layer M2 is not specified, it will use  0.600 microns.
+  Layer M2        0.600             0.400 
+**WARN: (ENCEXT-3087):	Fill active spacing for layer M3 is not specified, it will use  0.600 microns.
+  Layer M3        0.600             0.400 
+**WARN: (ENCEXT-3087):	Fill active spacing for layer M4 is not specified, it will use  0.600 microns.
+  Layer M4        0.600             0.400 
+**WARN: (ENCEXT-3087):	Fill active spacing for layer M5 is not specified, it will use  0.600 microns.
+  Layer M5        0.600             0.400 
+**WARN: (ENCEXT-3087):	Fill active spacing for layer M6 is not specified, it will use  0.600 microns.
+  Layer M6        0.600             0.400 
+**WARN: (ENCEXT-3087):	Fill active spacing for layer M7 is not specified, it will use  0.600 microns.
+  Layer M7        0.600             0.400 
+**WARN: (ENCEXT-3087):	Fill active spacing for layer M8 is not specified, it will use  0.600 microns.
+  Layer M8        0.600             0.400 
+**WARN: (ENCEXT-3087):	Fill active spacing for layer M9 is not specified, it will use  0.600 microns.
+  Layer M9        0.600             0.400 
+**WARN: (ENCEXT-3087):	Fill active spacing for layer M10 is not specified, it will use  0.600 microns.
+  Layer M10        0.600             0.400 
+RC Mode: Detail [Assume Metal Fill, LEF Resistances]
+Capacitance Scaling Factor   : 1.00000
+Resistance Scaling Factor    : 1.00000
+Coupling Cap. Scaling Factor : 1.00000
+Clock Cap. Scaling Factor    : 1.00000
+Clock Res. Scaling Factor    : 1.00000
+Shrink Factor                : 1.00000
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 230.8M)
+Creating parasitic data file './adder7_8_YEP5KH_10699.rcdb.d/header.da' in memory efficient access mode for storing RC.
+Extracted 10.0642% (CPU Time= 0:00:00.0  MEM= 234.4M)
+Extracted 20.0481% (CPU Time= 0:00:00.0  MEM= 234.4M)
+Extracted 30.0722% (CPU Time= 0:00:00.0  MEM= 234.4M)
+Extracted 40.0561% (CPU Time= 0:00:00.0  MEM= 234.4M)
+Extracted 50.0802% (CPU Time= 0:00:00.0  MEM= 234.4M)
+Extracted 60.0642% (CPU Time= 0:00:00.0  MEM= 234.9M)
+Extracted 70.0481% (CPU Time= 0:00:00.0  MEM= 234.9M)
+Extracted 80.0722% (CPU Time= 0:00:00.0  MEM= 234.9M)
+Extracted 90.0561% (CPU Time= 0:00:00.0  MEM= 234.9M)
+Extracted 100% (CPU Time= 0:00:00.0  MEM= 234.9M)
+Nr. Extracted Resistors     : 4068
+Nr. Extracted Ground Cap.   : 4419
+Nr. Extracted Coupling Cap. : 7228
+Opening parasitic data file './adder7_8_YEP5KH_10699.rcdb.d/header.da' for reading.
+Filtering XCap in 'relativeOnly' mode using values relative_c_threshold=0.03 and total_c_threshold=5fF.
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 233.9M)
+Creating parasitic data file './adder7_8_YEP5KH_10699.rcdb_Filter.rcdb.d/header.da' in memory efficient access mode for storing RC.
+Closing parasitic data file './adder7_8_YEP5KH_10699.rcdb.d'. 351 times net's RC data read were performed.
+Opening parasitic data file './adder7_8_YEP5KH_10699.rcdb.d/header.da' for reading.
+Detail RC Extraction DONE (CPU Time: 0:00:00.1  Real Time: 0:00:00.0  MEM: 230.836M)
+Using new Cte TW Api base...#################################################################################
+# Design Stage: PreRoute
+# Design Mode: 90nm
+# Analysis Mode: non-MMMC non-OCV
+# Extraction Mode: detail/spef
+# Delay Calculation Options: engine=default signOff=true SIAware=false(opt)
+# Switching Delay Calculation Engine to feDC
+#################################################################################
+Calculate delays in Single mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 233.6M, InitMEM = 233.6M)
+Start delay calculation (mem=233.594M)...
+delayCal using detail RC...
+Opening parasitic data file './adder7_8_YEP5KH_10699.rcdb.d/header.da' for reading.
+RC Database In Completed (CPU Time= 0:00:00.0  MEM= 237.1M)
+Delay calculation completed. (cpu=0:00:00.0 real=0:00:00.0 mem=237.242M 0)
+*** CDM Built up (cpu=0:00:00.0  real=0:00:00.0  mem= 237.2M) ***
+<CMD_INTERNAL> endECO
+<CMD_INTERNAL> cleanupECO
+<CMD> buildTimingGraph
+<CMD_INTERNAL> setCteReport
+<CMD> report_timing -nworst  10 -net > timing.rep.4.ipo2
+<CMD> addFiller -cell FILL -prefix FILL -fillBoundary
+**Info: (ENCSP-307): Design contains fractional 20 cells.
+*INFO: Adding fillers to top-module.
+*INFO:   Added 448 filler insts (cell FILL / prefix FILL).
+*INFO: Total 448 filler insts added - prefix FILL (CPU: 0:00:00.0).
+For 448 new insts, *** Applied 2 GNC rules (cpu = 0:00:00.0)
+<CMD> globalNetConnect vdd -type tiehi
+<CMD> globalNetConnect vdd -type pgpin -pin vdd -override
+<CMD> globalNetConnect gnd -type tielo
+<CMD> globalNetConnect gnd -type pgpin -pin gnd -override
+<CMD> globalDetailRoute
+
+globalDetailRoute
+
+#Start globalDetailRoute on Mon Nov 26 14:18:12 2012
+#
+Closing parasitic data file './adder7_8_YEP5KH_10699.rcdb.d'. 351 times net's RC data read were performed.
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 233.00 (Mb)
+#WARNING (NRDB-976) The step 0.280000 for preferred direction tracks is smaller than the pitch 0.285000 for LAYER metal4. This will cause routability problems for NanoRoute.
+#WARNING (NRDB-976) The step 0.280000 for preferred direction tracks is smaller than the pitch 0.285000 for LAYER metal6. This will cause routability problems for NanoRoute.
+#WARNING (NRDB-976) The step 0.840000 for preferred direction tracks is smaller than the pitch 0.855000 for LAYER metal8. This will cause routability problems for NanoRoute.
+#WARNING (NRDB-976) The step 1.680000 for preferred direction tracks is smaller than the pitch 1.710000 for LAYER metal10. This will cause routability problems for NanoRoute.
+#NanoRoute Version v10.13-s033 NR120726-2234/10_10_USR3-UB
+#WARNING (NREX-28) The height of the first routing layer metal1 is 0.000000. It should be larger than 0.000000
+#WARNING (NREX-29) The metal thickness of routing layer metal1 is 0.000000. It should be larger than 0.0. Add this to the technology information for better accuracy.
+#WARNING (NREX-30) Please also check the height and metal thickness values for the routing layers heigher than routing layer metal1
+#WARNING (NREX-4) No Extended Cap Table was imported. Not enough process information was provided either and default Extended Cap Table database will be used.
+# metal1       H   Track-Pitch = 0.190    Line-2-Via Pitch = 0.130
+# metal2       V   Track-Pitch = 0.190    Line-2-Via Pitch = 0.145
+# metal3       H   Track-Pitch = 0.190    Line-2-Via Pitch = 0.140
+# metal4       V   Track-Pitch = 0.280    Line-2-Via Pitch = 0.280
+# metal5       H   Track-Pitch = 0.285    Line-2-Via Pitch = 0.280
+# metal6       V   Track-Pitch = 0.280    Line-2-Via Pitch = 0.280
+# metal7       H   Track-Pitch = 0.950    Line-2-Via Pitch = 0.800
+# metal8       V   Track-Pitch = 0.840    Line-2-Via Pitch = 0.800
+# metal9       H   Track-Pitch = 1.710    Line-2-Via Pitch = 1.600
+# metal10      V   Track-Pitch = 1.680    Line-2-Via Pitch = 1.600
+#Merging special wires...
+#Number of eco nets is 0
+#
+#Start data preparation...
+#Force regenerating Ggrids.
+#Auto generating G-grids with size=15 tracks, using layer metal2's pitch = 0.190.
+#Using automatically generated G-grids.
+#
+#Data preparation is done on Mon Nov 26 14:18:12 2012
+#
+#Analyzing routing resource...
+#Routing resource analysis is done on Mon Nov 26 14:18:12 2012
+#
+#  Resource Analysis:
+#
+#               Routing  #Avail      #Track     #Total     %Gcell
+#  Layer      Direction   Track     Blocked      Gcell    Blocked
+#  --------------------------------------------------------------
+#  Metal 1        H         456         162        1722    30.49%
+#  Metal 2        V         460         165        1722    20.03%
+#  Metal 3        H         618           0        1722     0.00%
+#  Metal 4        V         416           0        1722     0.00%
+#  Metal 5        H         411           0        1722     0.00%
+#  Metal 6        V         416           0        1722     0.00%
+#  Metal 7        H         123           0        1722     0.00%
+#  Metal 8        V         141           0        1722     0.00%
+#  Metal 9        H          68           0        1722     0.00%
+#  Metal 10       V          70           0        1722     0.00%
+#  --------------------------------------------------------------
+#  Total                   3179       5.27%  17220     5.05%
+#
+#
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 249.00 (Mb)
+#
+#start global routing iteration 1...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 249.00 (Mb)
+#
+#start global routing iteration 2...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 250.00 (Mb)
+#
+#start global routing iteration 3...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 250.00 (Mb)
+#
+#
+#  Congestion Analysis: (blocked Gcells are excluded)
+#
+#                 OverCon          
+#                  #Gcell    %Gcell
+#     Layer           (1)   OverCon
+#  --------------------------------
+#   Metal 1      0(0.00%)   (0.00%)
+#   Metal 2      0(0.00%)   (0.00%)
+#   Metal 3      0(0.00%)   (0.00%)
+#   Metal 4      0(0.00%)   (0.00%)
+#   Metal 5      0(0.00%)   (0.00%)
+#   Metal 6      0(0.00%)   (0.00%)
+#   Metal 7      0(0.00%)   (0.00%)
+#   Metal 8      0(0.00%)   (0.00%)
+#   Metal 9      0(0.00%)   (0.00%)
+#  Metal 10      0(0.00%)   (0.00%)
+#  --------------------------------
+#     Total      0(0.00%)   (0.00%)
+#
+#  The worst congested Gcell overcon (routing demand over resource in number of tracks) = 1
+#
+#Complete Global Routing.
+#Total wire length = 5081 um.
+#Total half perimeter of net bounding box = 5747 um.
+#Total wire length on LAYER metal1 = 0 um.
+#Total wire length on LAYER metal2 = 2453 um.
+#Total wire length on LAYER metal3 = 2195 um.
+#Total wire length on LAYER metal4 = 166 um.
+#Total wire length on LAYER metal5 = 215 um.
+#Total wire length on LAYER metal6 = 52 um.
+#Total wire length on LAYER metal7 = 0 um.
+#Total wire length on LAYER metal8 = 0 um.
+#Total wire length on LAYER metal9 = 0 um.
+#Total wire length on LAYER metal10 = 0 um.
+#Total number of vias = 1165
+#Up-Via Summary (total 1165):
+#           
+#-----------------------
+#  Metal 1          684
+#  Metal 2          456
+#  Metal 3           15
+#  Metal 4            9
+#  Metal 5            1
+#-----------------------
+#                  1165 
+#
+#Max overcon = 0 track.
+#Total overcon = 0.00%.
+#Worst layer Gcell overcon rate = 0.00%.
+#Cpu time = 00:00:00
+#Elapsed time = 00:00:00
+#Increased memory = 2.00 (Mb)
+#Total memory = 250.00 (Mb)
+#Peak memory = 281.00 (Mb)
+#
+#Start Detail Routing...
+#start initial detail routing ...
+#    number of violations = 9
+#cpu time = 00:00:02, elapsed time = 00:00:02, memory = 254.00 (Mb)
+#start 1st optimization iteration ...
+#    number of violations = 0
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 254.00 (Mb)
+#Complete Detail Routing.
+#Total wire length = 5437 um.
+#Total half perimeter of net bounding box = 5747 um.
+#Total wire length on LAYER metal1 = 97 um.
+#Total wire length on LAYER metal2 = 2398 um.
+#Total wire length on LAYER metal3 = 2163 um.
+#Total wire length on LAYER metal4 = 457 um.
+#Total wire length on LAYER metal5 = 280 um.
+#Total wire length on LAYER metal6 = 42 um.
+#Total wire length on LAYER metal7 = 0 um.
+#Total wire length on LAYER metal8 = 0 um.
+#Total wire length on LAYER metal9 = 0 um.
+#Total wire length on LAYER metal10 = 0 um.
+#Total number of vias = 1770
+#Up-Via Summary (total 1770):
+#           
+#-----------------------
+#  Metal 1          845
+#  Metal 2          776
+#  Metal 3          133
+#  Metal 4           13
+#  Metal 5            3
+#-----------------------
+#                  1770 
+#
+#Total number of DRC violations = 0
+#Total number of violations on LAYER metal1 = 0
+#Total number of violations on LAYER metal2 = 0
+#Total number of violations on LAYER metal3 = 0
+#Total number of violations on LAYER metal4 = 0
+#Total number of violations on LAYER metal5 = 0
+#Total number of violations on LAYER metal6 = 0
+#Total number of violations on LAYER metal7 = 0
+#Total number of violations on LAYER metal8 = 0
+#Total number of violations on LAYER metal9 = 0
+#Total number of violations on LAYER metal10 = 0
+#detailRoute Statistics:
+#Cpu time = 00:00:02
+#Elapsed time = 00:00:02
+#Increased memory = 0.00 (Mb)
+#Total memory = 250.00 (Mb)
+#Peak memory = 296.00 (Mb)
+#
+#globalDetailRoute statistics:
+#Cpu time = 00:00:02
+#Elapsed time = 00:00:02
+#Increased memory = 9.00 (Mb)
+#Total memory = 245.00 (Mb)
+#Peak memory = 296.00 (Mb)
+#Number of warnings = 8
+#Total number of warnings = 8
+#Number of fails = 0
+#Total number of fails = 0
+#Complete globalDetailRoute on Mon Nov 26 14:18:14 2012
+#
+<CMD> setExtractRCMode -detail -noReduce
+**WARN: (ENCEXT-1082):	Option '-detail' is obsolete. Use '-engine postRoute [-effortLevel low]' to set extraction engine, which is based on recommended convention '-engine postRoute [-effortLevel <low|medium|high|signoff>]'. The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script and configuration file to use recommended convention.
+**WARN: (ENCEXT-3400):	Option '-noReduce' is obsolete. Use option '-reduce 0.0' instead.
+<CMD> extractRC
+Extraction called for design 'adder7_8' of instances=742 and nets=353 using extraction engine 'postRoute' at effort level 'low' .
+**WARN: (ENCEXT-3530):	Use of command 'setDesignMode -process <process_node>' prior to extraction is recommended for maximum accuracy and optimal automatic threshold setting.
+Detail RC Extraction called for design adder7_8.
+**WARN: (ENCEXT-6166):	Using capacitance table file without EXTENDED section is not recommended and will result in lower accuracy for clock nets in preRoute extraction and for all nets when using postRoute extraction -effortLevel low. Regeneration of full capacitance table is recommended.
+**WARN: (ENCEXT-3032):	Since cap. table file was not provided, it will be created internally with the following process info:
+* Layer Id             : 1 - M1
+      Thickness        : 0.6
+      Min Width        : 0.065
+      Layer Dielectric : 4.1
+* Layer Id             : 2 - M2
+      Thickness        : 0.6
+      Min Width        : 0.07
+      Layer Dielectric : 4.1
+* Layer Id             : 3 - M3
+      Thickness        : 0.6
+      Min Width        : 0.07
+      Layer Dielectric : 4.1
+* Layer Id             : 4 - M4
+      Thickness        : 0.6
+      Min Width        : 0.14
+      Layer Dielectric : 4.1
+* Layer Id             : 5 - M5
+      Thickness        : 0.6
+      Min Width        : 0.14
+      Layer Dielectric : 4.1
+* Layer Id             : 6 - M6
+      Thickness        : 0.6
+      Min Width        : 0.14
+      Layer Dielectric : 4.1
+* Layer Id             : 7 - M7
+      Thickness        : 0.6
+      Min Width        : 0.4
+      Layer Dielectric : 4.1
+* Layer Id             : 8 - M8
+      Thickness        : 0.6
+      Min Width        : 0.4
+      Layer Dielectric : 4.1
+* Layer Id             : 9 - M9
+      Thickness        : 0.6
+      Min Width        : 0.8
+      Layer Dielectric : 4.1
+* Layer Id             : 10 - M10
+      Thickness        : 1
+      Min Width        : 0.8
+      Layer Dielectric : 4.1
+extractDetailRC Option : -outfile ./adder7_8_YEP5KH_10699.rcdb.d -maxResLength 200  -basic -newAssumeMetFill
+Assumed metal fill uses the following parameters:
+              Active Spacing      Min. Width
+                [microns]         [microns]
+**WARN: (ENCEXT-3087):	Fill active spacing for layer M1 is not specified, it will use  0.600 microns.
+  Layer M1        0.600             0.400 
+**WARN: (ENCEXT-3087):	Fill active spacing for layer M2 is not specified, it will use  0.600 microns.
+  Layer M2        0.600             0.400 
+**WARN: (ENCEXT-3087):	Fill active spacing for layer M3 is not specified, it will use  0.600 microns.
+  Layer M3        0.600             0.400 
+**WARN: (ENCEXT-3087):	Fill active spacing for layer M4 is not specified, it will use  0.600 microns.
+  Layer M4        0.600             0.400 
+**WARN: (ENCEXT-3087):	Fill active spacing for layer M5 is not specified, it will use  0.600 microns.
+  Layer M5        0.600             0.400 
+**WARN: (ENCEXT-3087):	Fill active spacing for layer M6 is not specified, it will use  0.600 microns.
+  Layer M6        0.600             0.400 
+**WARN: (ENCEXT-3087):	Fill active spacing for layer M7 is not specified, it will use  0.600 microns.
+  Layer M7        0.600             0.400 
+**WARN: (ENCEXT-3087):	Fill active spacing for layer M8 is not specified, it will use  0.600 microns.
+  Layer M8        0.600             0.400 
+**WARN: (ENCEXT-3087):	Fill active spacing for layer M9 is not specified, it will use  0.600 microns.
+  Layer M9        0.600             0.400 
+**WARN: (ENCEXT-3087):	Fill active spacing for layer M10 is not specified, it will use  0.600 microns.
+  Layer M10        0.600             0.400 
+RC Mode: Detail [Assume Metal Fill, LEF Resistances]
+Capacitance Scaling Factor   : 1.00000
+Resistance Scaling Factor    : 1.00000
+Coupling Cap. Scaling Factor : 1.00000
+Clock Cap. Scaling Factor    : 1.00000
+Clock Res. Scaling Factor    : 1.00000
+Shrink Factor                : 1.00000
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 246.0M)
+Creating parasitic data file './adder7_8_YEP5KH_10699.rcdb.d/header.da' in memory efficient access mode for storing RC.
+Extracted 10.0623% (CPU Time= 0:00:00.0  MEM= 248.5M)
+Extracted 20.0801% (CPU Time= 0:00:00.0  MEM= 248.5M)
+Extracted 30.0534% (CPU Time= 0:00:00.0  MEM= 249.0M)
+Extracted 40.0712% (CPU Time= 0:00:00.0  MEM= 249.0M)
+Extracted 50.089% (CPU Time= 0:00:00.0  MEM= 249.0M)
+Extracted 60.0623% (CPU Time= 0:00:00.0  MEM= 249.0M)
+Extracted 70.0801% (CPU Time= 0:00:00.0  MEM= 249.0M)
+Extracted 80.0534% (CPU Time= 0:00:00.0  MEM= 249.0M)
+Extracted 90.0712% (CPU Time= 0:00:00.0  MEM= 249.0M)
+Extracted 100% (CPU Time= 0:00:00.0  MEM= 249.0M)
+Nr. Extracted Resistors     : 4016
+Nr. Extracted Ground Cap.   : 4367
+Nr. Extracted Coupling Cap. : 7992
+Opening parasitic data file './adder7_8_YEP5KH_10699.rcdb.d/header.da' for reading.
+Filtering XCap in 'relativeOnly' mode using values relative_c_threshold=0.03 and total_c_threshold=5fF.
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 248.0M)
+Creating parasitic data file './adder7_8_YEP5KH_10699.rcdb_Filter.rcdb.d/header.da' in memory efficient access mode for storing RC.
+Closing parasitic data file './adder7_8_YEP5KH_10699.rcdb.d'. 351 times net's RC data read were performed.
+Opening parasitic data file './adder7_8_YEP5KH_10699.rcdb.d/header.da' for reading.
+Detail RC Extraction DONE (CPU Time: 0:00:00.1  Real Time: 0:00:00.0  MEM: 245.977M)
+<CMD> buildTimingGraph
+<CMD_INTERNAL> setCteReport
+<CMD> report_timing -nworst  10 -net > timing.rep.5.final
+Using new Cte TW Api base...#################################################################################
+# Design Stage: PostRoute
+# Design Mode: 90nm
+# Analysis Mode: non-MMMC non-OCV
+# Extraction Mode: detail/spef
+# Delay Calculation Options: engine=default signOff=true SIAware=false(opt)
+# Switching Delay Calculation Engine to feDC
+#################################################################################
+Calculate delays in Single mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 249.2M, InitMEM = 249.2M)
+Start delay calculation (mem=249.234M)...
+delayCal using detail RC...
+Opening parasitic data file './adder7_8_YEP5KH_10699.rcdb.d/header.da' for reading.
+RC Database In Completed (CPU Time= 0:00:00.0  MEM= 251.8M)
+Delay calculation completed. (cpu=0:00:00.0 real=0:00:00.0 mem=251.750M 0)
+*** CDM Built up (cpu=0:00:00.0  real=0:00:00.0  mem= 251.8M) ***
+<CMD> streamOut final.gds2 -mapFile gds2_encounter.map -stripes 1 -units 1000 -mode ALL
+Parse map file...
+Writing GDSII file ...
+	****** db unit per micron = 2000 ******
+	****** output gds2 file unit per micron = 1000 ******
+	****** unit scaling factor = 0.5 ******
+**WARN: (ENCOGDS-250):	specified units is smaller than the one in db - you may have rounding problems
+Output for instance
+Output for bump
+Output for physical terminals
+Output for logical terminals
+Output for regular nets
+Output for special nets and metal fills
+Output for via structure generation
+Statistics for GDS generated (version 3)
+----------------------------------------
+Stream Out Layer Mapping Information:
+GDS Layer Number          GDS Layer Name
+----------------------------------------
+    49                            metal1
+    51                            metal2
+    61                              via2
+    62                            metal3
+    30                              via3
+    31                            metal4
+    32                              via4
+    33                            metal5
+    36                              via5
+    37                            metal6
+    38                              via6
+    39                            metal7
+    40                              via7
+    41                            metal8
+    42                              via8
+    43                            metal9
+    44                              via9
+    45                           metal10
+    50                               via
+    49                            metal1
+    51                            metal2
+    62                            metal3
+    31                            metal4
+    39                            metal4
+    33                            metal5
+    41                            metal5
+    37                            metal6
+    45                            metal6
+
+
+Stream Out Information Processed for GDS version 3:
+Units: 1000 DBU
+
+Object                             Count
+----------------------------------------
+Instances                            742
+
+Ports/Pins                            65
+    metal layer metal2                26
+    metal layer metal3                24
+    metal layer metal4                 6
+    metal layer metal5                 8
+    metal layer metal6                 1
+
+Nets                                2246
+    metal layer metal1               168
+    metal layer metal2              1396
+    metal layer metal3               592
+    metal layer metal4                77
+    metal layer metal5                11
+    metal layer metal6                 2
+
+    Via Instances                   1770
+
+Special Nets                          53
+    metal layer metal1                49
+    metal layer metal2                 4
+
+    Via Instances                     38
+
+Metal Fills                            0
+
+    Via Instances                      0
+
+Metal FillOPCs                         0
+
+    Via Instances                      0
+
+Text                                  82
+    metal layer metal1                 2
+    metal layer metal2                26
+    metal layer metal3                24
+    metal layer metal4                12
+    metal layer metal5                16
+    metal layer metal6                 2
+
+
+Blockages                              0
+
+
+Custom Text                            0
+
+
+Custom Box                             0
+
+######Streamout is finished!
+<CMD> saveNetlist -excludeLeafCell final.v
+Writing Netlist "final.v" ...
+<CMD> rcOut -spf final.dspf
+Opening parasitic data file './adder7_8_YEP5KH_10699.rcdb.d/header.da' for reading.
+RC Out has the following PVT Info:
+   RC-typical 
+Printing *|NET...
+Detail RC Out Completed (CPU Time= 0:00:00.0  MEM= 255.3M)
+Closing parasitic data file './adder7_8_YEP5KH_10699.rcdb.d'. 351 times net's RC data read were performed.
+<CMD> verifyGeometry
+ *** Starting Verify Geometry (MEM: 251.2) ***
+
+  VERIFY GEOMETRY ...... Starting Verification
+  VERIFY GEOMETRY ...... Initializing
+  VERIFY GEOMETRY ...... Deleting Existing Violations
+  VERIFY GEOMETRY ...... Creating Sub-Areas
+                  ...... bin size: 2080
+  VERIFY GEOMETRY ...... SubArea : 1 of 1
+  VERIFY GEOMETRY ...... Cells          :  0 Viols.
+  VERIFY GEOMETRY ...... SameNet        :  0 Viols.
+  VERIFY GEOMETRY ...... Wiring         :  0 Viols.
+  VERIFY GEOMETRY ...... Antenna        :  0 Viols.
+  VERIFY GEOMETRY ...... Sub-Area : 1 complete 0 Viols. 0 Wrngs.
+VG: elapsed time: 0.00
+Begin Summary ...
+  Cells       : 0
+  SameNet     : 0
+  Wiring      : 0
+  Antenna     : 0
+  Short       : 0
+  Overlap     : 0
+End Summary
+
+  Verification Complete : 0 Viols.  0 Wrngs.
+
+**********End: VERIFY GEOMETRY**********
+ *** verify geometry (CPU: 0:00:00.3  MEM: 10.5M)
+
+<CMD> verifyConnectivity -type all
+
+******** Start: VERIFY CONNECTIVITY ********
+Start Time: Mon Nov 26 14:18:15 2012
+
+Design Name: adder7_8
+Database Units: 2000
+Design Boundary: (0.0000, 0.0000) (118.9325, 117.4300)
+Error Limit = 1000; Warning Limit = 50
+Check all nets
+Time Elapsed: 0:00:00.0
+
+Begin Summary 
+  Found no problems or warnings.
+End Summary
+
+End Time: Mon Nov 26 14:18:15 2012
+******** End: VERIFY CONNECTIVITY ********
+  Verification Complete : 0 Viols.  0 Wrngs.
+  (CPU Time: 0:00:00.0  MEM: 0.500M)
+
+<CMD> reportGateCount
+Gate area 2.8158 um^2
+<CMD> reportGateCount -limit 0
+Gate area 2.8158 um^2
+[0] adder7_8 Gates=285 Cells=294 Area=804.8 um^2

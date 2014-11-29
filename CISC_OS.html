@@ -1,0 +1,268 @@
+<!DOCTYPE html5>
+<html>
+	<style>
+	</style>
+	<head>
+<<<<<<< HEAD
+		<title>CISC Monitor Project</title>
+		<link rel="stylesheet" type="text/css" href="style/style.css" />
+		<link rel="shortcut icon" href="style/favicon.ico"/>
+		
+		<meta name="keywords" content="Jeff Grindel, Motorola, 68k, 68000, Microprocessor, debugger, Exception, handling, CISC, Assembly, language"/>
+		<meta name="description" content="Program for the Motorola 68K Microprocessor to perform debugging functions and exception handling"/>
+		<meta name="author" content="Jeff Grindel"/>	
+	
+		<meta name="og:url" content="http://jeffgrindel.com/CISC_OS.html" />
+		<meta name="og:title" content="CISC Monitor Project" />
+		<meta name="og:description" content="Program for the Motorola 68K Microprocessor to perform debugging functions and exception handling" />
+	
+		<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-37279532-1']);
+		  _gaq.push(['_setDomainName', 'jeffgrindel.com']);
+		  _gaq.push(['_setAllowLinker', true]);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+=======
+		<title>Jeff Grindel</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="shortcut icon" href="favicon.ico"/>
+		<meta name="keywords" content="Arduino, Jeff Grindel"/>
+		<meta name="description" content="Jeff Grindel's Website"/>
+		<meta name="author" content="Jeff Grindel"/>	
+	
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-36671313-1']);
+			_gaq.push(['_setDomainName', 'azurewebsites.net']);
+			_gaq.push(['_setAllowLinker', true]);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+>>>>>>> Added full website
+		</script>
+	</head>
+	<body>
+		<header>
+			<h1 style="text-align:center;">Jeff Grindel</h1>
+			<p class="seperator shadow rounded" />
+		</header>
+		<div id="container" class="container">
+			<div id="content" class="content">
+				<div class="menu">
+					<ul class="menu shadow rounded">
+						<li class="header">Menu</li>
+						<li class="item"><a href="index.html">Home</a></li>
+						<li class="section">Projects</li>
+<<<<<<< HEAD
+						<li class="item"><a href="SousVide.html">Sous Vide</a></li>		
+						<li class="section"><a href="CISC_OS.html#Micro">CISC OS</a></li> <!--Change this to differ from the Projects link which is above -->
+						<li class="item"><a href="MIPS.html">MIPS Processor</a></li>
+						<li class="item"><a href="VLSI.html">Multi-Operand Adders</a></li>
+						<li class="item"><a href="projects.html#D3L">D3L Adders</a></li>
+						<li class="item"><a href="projects.html#CompSim">HDL Simulation</a></li>
+						<li class="item"><a href="Ipro2.html">Engineering Solutions</a></li>
+=======
+						<li class="item"><a href="projects.html#ASV">Sous Vide</a></li>		
+						<li class="section"><a href="CISC_OS.html#Micro">CISC OS</a></li> <!--Change this to differ from the Projects link which is above -->
+						<li class="item"><a href="projects.html#Processor">MIPS Processor</a></li>
+						<li class="item"><a href="projects.html#VLSI">VLSI Adders</a></li>
+						<li class="item"><a href="projects.html#Ipro2">Engineering Solutions</a></li>
+>>>>>>> Added full website
+						<li class="item"><a href="projects.html#Ipro1">Polar Power</a></li>
+						
+						<li class="section">Contact</li>
+						<li class="item"><a href="http://www.linkedin.com/in/jeffgrindel" target="_blank">LinkedIn</a></li>
+						<li class="item"><a href="mailto:jeff.grindel@gmail.com?Subject=Website Inquiry" target="_blank">Email</a></li>
+						<li class="item"><a href="school/Jeff_Grindel.pdf" target="_blank">Resume</a></li>
+					</ul>
+				</div>
+	
+				<div class="main">
+					<fieldset class="shadow rounded">
+						<legend><a id="Micro">CISC OS</a></legend>
+							<p>This implementation of the CISC operating system is to implement a very limited number
+							of instructions and exceptions. The main purpose of this is to interact with the user in order
+							to run/debug assembly code written by the user. This specific implementation was written using 
+							the Easy68K simulation software since the Motorola Processors were in the lab and was not always
+							accessible. This simulation software utilizes different TRAP functions than the typical CISC implementation 
+							therefore will not be able to be directly loaded onto the 68K processor. Instead, simulation will need to be 
+<<<<<<< HEAD
+							run using Easy68K.</p>
+=======
+							run using Easy68K. Full <a href="#source">source code</a> and report are at the bottom of the page.</p>
+>>>>>>> Added full website
+							<p><h3>Design</h3></p>
+							<p><DD><h4>Command interpreter</h4>
+							<li>Input/Output interaction with the user</li>
+							<li>Prompt user to enter various commands</li>
+							<li>Command recognized, implements subroutine</li>
+							<li>Command not recognized, prompts user to enter another command</li>
+							<!--Insert the Flowchart -->
+							<h4>Debugger Commands</h4>
+							<p>The following commands are the supported commands written into the program with the Command name, 
+							the Description of the commands, and the proper syntax of the command. Generally '$' Indicates a hexadecimal 
+							number, '#' indicates a decimal number, 'XX' indicates the specified number in proper form, and 'STRING' 
+							is a string of characters. After each command in entered into the command prompt press enter to run the command.</p>
+							<table id="Debugger Commands" style="float:center">
+								<tr>
+									<th>Command</th>
+									<th>Description</th>
+									<th>Syntax</th>
+								</tr>
+								<tr>
+									<td>HELP</td>
+									<td>Displays the help message</td>
+									<td>HELP<CR></td>
+								</tr>
+								<tr>
+									<td>EXIT</td>
+									<td>Exits the program</td>
+									<td>EXIT<CR></td>
+								</tr>
+								<tr>
+									<td>GOTO</td>
+									<td>Starts execution from a given address</td>
+									<td>GOTO $[address]</td>
+								</tr>
+								<tr>
+									<td>CON1</td>
+									<td>Converts a 2 character hexadecimal number to a decimal number</td>
+									<td>CON1 $[XX]</td>
+								</tr>
+								<tr>
+									<td>CON2</td>
+									<td>Converts a 2 digit decimal number to a hexadecimal number</td>
+									<td>CON2 #[XX]</td>
+								</tr>
+								<tr>
+									<td>MEMD</td>
+									<td>Displays the memory from a start location to an end location in byte form</td>
+									<td>MEMD $[Start Address] $[End Address]</td>
+								</tr>
+								<tr>
+									<td>BFIL</td>
+									<td>Fills a block of memory with a hexadecimal value</td>
+									<td>BFIL $[Start Address] $[End Address] $[XX]</td>
+								</tr>
+								<tr>
+									<td>MEMM</td>
+									<td>Changes the contents of the memory at a start location. '.' To exit</td>
+									<td>MEMM $[Start Address]</td>
+								</tr>
+								<tr>
+									<td>MEMS</td>
+									<td>Changes the memory to a specified string of characters. Size limited to the buffer space</td>
+									<td>MEMS $[Start Address] STRING</td>
+								</tr>
+								<tr>
+									<td>BLKM</td>
+									<td>Moves contents of memory in a specified range to memory at the new location. The new location cannot 
+									be in between the  memory range specified. Only even locations are permitted.</td>
+									<td>BLKM $[Start Address] $[End Address] $[New Start Address]</td>
+								</tr>
+								<tr>
+									<td>BSER</td>
+									<td>Searches the specified range of memory for the given string entered.</td>
+									<td>BSER $[Start Address] $[End Address] STRING</td>
+								</tr>
+								<tr>
+									<td>BSRT</td>
+									<td>Sorts contents of a specified range of memory from greatest to least. Words at an even address.</td>
+									<td>BSRT $[Start Address] $[End Address]</td>
+								</tr>
+							</table>
+							
+							<h4>Exception Handling</h4>
+							<p>In the program, the following exceptions will be caught during runtime. When an exception
+							occurs the register values are saved to the stack and then outputted to the terminal
+							for debugging purposes. </p>
+							<li>Bus Error Exception</li>
+							<li>Address Error Exception</li>
+							<li>Illegal Instruction Exception</li>
+							<li>Divide by 0 Exception</li>
+							<li>Privilege Violation Exception</li>
+							<li>Line A Exception</li>
+							<li>Line F Exception</li>
+							<li>CHK Error Exception</li>
+							
+							<h4>Instruction Manual</h4>
+							<p>The Instruction Manual is simple the HELP command that can be seen in the Debugger Commands Table. This allows the user to input the HELP command 
+							to print out the implementation of the debugger commands.</p>
+							</DD></p>
+							
+							<p><h3>Implementation</h3></p>
+							<DD><p>In order to have the program organized the code is separated into various sections. This was necessary because 
+							the amount of code written needs to be organized. The main sections of the program include:
+							<li>Memory Reservations</li>
+							<li>Main Program
+							<li>Buffer Call Subroutines
+							<li>Table Lookup
+							<li>Command Execution
+							<li>Output messages
+							<li>Command Subroutines
+							<li>Conversion Subroutines
+							<li>Checking Subroutines
+							<li>Exception Handling</li>
+							<p>The memory reservations are where all of the necessary reservations are made. These include the help menu, 
+							input buffer, command tables, temporary buffers, and messages that will be called in the output message sections.</p>
+							<p>The main program simply outputs the terminal prompt and prompts the user for input. After this is done they branch 
+							to the necessary commands. Once done the subroutines return back to this main program and the process is repeated indefinably.</p>
+							<p>The buffer call subroutines are where the program outputs the terminal prompt and takes in the input from the user. If does various
+							checks to see if it is viable input. It will then call the table lookup.</p>
+							<p>In table lookup, the command entered in the buffer call section is checked against a list stores in the memory reservations section. 
+							This is to verify if the command entered is a command that is recognized by the program. If the command is not found in the table 
+							then an error message is printed and the program returns back to the main program.</p>
+							<p>The command execution takes the data from the table lookup and will determine where to branch to base on the command entered into the program.</p>
+							<p>Output messages are a majority of the subroutines that are called from various other routines for outputting a message to the terminal.
+							These messages include a couple error messages, hex to decimal output message, decimal to hex output message, block found message, block 
+							not found message, and sort message.</p>
+							<p>All twelve of the debugger commands are located in the command subroutines section. This is a bulk of the code because there is a lot of 
+							checking to do and the actual commands are executed here, and no two subroutines are the same.</p>
+							<p>The conversion subroutines are used in various command subroutines. Since the user enters input in the terminal in ASCII format there is 
+							an ASCII to binary conversion and ASCII to decimal conversion. Since the terminal needs to print out messages the hex values that are mainly 
+							used in the subroutines must be then converted back to ASCII in order to be displayed in the terminal, these are Hex to ASCII. There is a final 
+							Decimal to hex routine that is used in the CON2 command.</p>
+							<p>Each subroutine has different arguments so there has to be a way to check if all of these inputs are correct. The checking subroutines are called 
+							throughout other subroutines. The checking subroutines include checking for hexadecimal input, decimal input, space, ‘$’ check, ‘#’ check, a routine 
+							that calls all of these, and finally a routine that checks if an address is located within the program space ($1000-$3FFF).</p>
+							<p>Finally we have the exception handling subroutines. This is where all of the exceptions are caught and the contents of the registers are displayed.</p>
+							</DD></p>
+						
+						
+						<p><h5>Please remember to use academic honesty. This is simply to showcase the projects I have worked on. It does not help at all
+						   to just copy and paste another person's implementation.</h5></p>
+<<<<<<< HEAD
+								
+=======
+						<a id = "source" href="https://github.com/jeff-grindel/CISC_OS" target="_blank">Source/Report</a><br>
+					
+>>>>>>> Added full website
+						<a href="projects.html#Micro"><br><b>Back...</b></a>
+						
+						<br><a href="#Top"><br>Top</a>
+					</fieldset>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="shadow">
+<<<<<<< HEAD
+				<p>Jeff Grindel 2013</p>
+=======
+				<p>Jeff Grindel 2012</p>
+>>>>>>> Added full website
+			</div>
+		</footer>
+	</body>
+</html>

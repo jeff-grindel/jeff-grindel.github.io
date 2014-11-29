@@ -1,0 +1,51 @@
+Host command: /apps/cadence/IES82/IUS82/tools/verilog/bin/verilog.exe
+Command arguments:
+    adder_lintest.v
+    adder_lin.v
+
+Tool:	VERILOG-XL	08.20.001-p log file created Nov 17, 2012  14:43:51
+Tool:	VERILOG-XL	08.20.001-p   Nov 17, 2012  14:43:51
+
+Copyright (c) 1995-2004 Cadence Design Systems, Inc.  All Rights Reserved.
+Unpublished -- rights reserved under the copyright laws of the United States.
+
+Copyright (c) 1995-2004 UNIX Systems Laboratories, Inc.  Reproduced with Permission.
+
+THIS SOFTWARE AND ON-LINE DOCUMENTATION CONTAIN CONFIDENTIAL INFORMATION
+AND TRADE SECRETS OF CADENCE DESIGN SYSTEMS, INC.  USE, DISCLOSURE, OR
+REPRODUCTION IS PROHIBITED WITHOUT THE PRIOR EXPRESS WRITTEN PERMISSION OF
+CADENCE DESIGN SYSTEMS, INC.
+RESTRICTED RIGHTS LEGEND
+
+Use, duplication, or disclosure by the Government is subject to
+restrictions as set forth in subparagraph (c)(1)(ii) of the Rights in
+Technical Data and Computer Software clause at DFARS 252.227-7013 or
+subparagraphs (c)(1) and (2) of Commercial Computer Software -- Restricted
+Rights at 48 CFR 52.227-19, as applicable.
+
+                Cadence Design Systems, Inc.
+                555 River Oaks Parkway
+                San Jose, California  95134
+
+For technical assistance please contact the Cadence Response Center at
+1-877-CDS-4911 or send email to support@cadence.com
+
+For more information on Cadence's Verilog-XL product line send email to
+talkv@cadence.com
+
+Compiling source file "adder_lintest.v"
+Compiling source file "adder_lin.v"
+Highest level modules:
+stimulus
+
+At Time:                  100  Sum=  8 Carry=0
+At Time:                  200  Sum= 36 Carry=0
+At Time:                  300  Sum=120 Carry=0
+At Time:                  400  Sum= 71 Carry=0
+At Time:                  500  Sum= 37 Carry=0
+At Time:                  600  Sum=122 Carry=0
+At Time:                  700  Sum=  0 Carry=1
+L36 "adder_lintest.v": $finish at simulation time 400000
+0 simulation events (use +profile or +listcounts option to count) + 1564 accelerated events
+CPU time: 0.0 secs to compile + 0.0 secs to link + 0.0 secs in simulation
+End of Tool:	VERILOG-XL	08.20.001-p   Nov 17, 2012  14:43:52

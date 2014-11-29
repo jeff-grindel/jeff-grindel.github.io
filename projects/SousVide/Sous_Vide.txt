@@ -1,0 +1,85 @@
+/*
+Sous Vide Cooker implementation using Arduino Microprocessor by Jeff Grindel
+
+Libraries provided by the following:
+<<<<<<< HEAD
+DallasTemperature.h
+=======
+DallaTemperature.h
+>>>>>>> Added full website
+http://milesburton.com/Dallas_Temperature_Control_Library
+
+OneWire.h
+http://www.pjrc.com/teensy/td_libs_OneWire.html
+
+LiquidCrystal.h
+http://arduino.cc/en/Reference/LiquidCrystalConstructor
+*/
+
+#include <DallasTemperature.h>
+#include <OneWire.h>
+#include <LiquidCrystal.h>
+
+//Define values of Variables that LCD uses
+#define RS 2
+#define E 3
+#define D4 4
+#define D5 5
+#define D6 6
+#define D7 7
+
+//Definition of AC power relay
+#define AC_CTRL 8
+
+//Data wire of the temp sensor plugged into pin 8
+#define ONE_WIRE_BUS 10
+
+//oneWire instance to communicat with OneWire Devices
+OneWire oneWire(ONE_WIRE_BUS);
+
+//Pass oneWire ref to Dallas Temperature
+DallasTemperature sensors(&oneWire);
+
+//Initialize the liquidcrystal for the LCD screen
+LiquidCrystal lcd(RS,E,D4,D5,D6,D7);
+
+void setup(void) {
+  Serial.begin(9600);        //serial port start
+  pinMode(AC_CTRL,OUTPUT);	 //Declaration of AC_CTRL Pin
+  lcd.begin(16,2);           //Start LCD
+  lcd.print("Restart!!!!");  //Start LCD Message
+  sensors.begin();			 //Start Sensor
+}
+
+void loop(void) {
+  float celsius, fahrenheit;	//Variables for Celsius and Fahrenheit
+  
+  //For serial Output:
+  Serial.print("Requesting Temps");  
+  sensors.requestTemperatures();
+  Serial.println("Done");
+  
+  Serial.print("The temp for device 1 is: ");
+  Serial.print(sensors.getTempCByIndex(0));
+  
+  //For Output to the LCD screen
+  celsius = (float)sensors.getTempCByIndex(0);
+  fahrenheit = (9*celsius)/5 + 32;
+  
+  //Prints the current temperature in both Celcius and Fahr. 
+  lcd.clear();
+  lcd.print("Temp: ");
+  lcd.setCursor(0,1);
+  lcd.print(fahrenheit);
+  lcd.print(" F");
+  
+  /*Controls the AC switch. When temp is below set Temp.
+	The Switch will be turned on, allowing the water to heat up
+	When the Temp. is above the set Temp, it will turn off
+    allowing the water to cool back down.*/
+  if(fahrenheit < 137.0){    
+    digitalWrite(AC_CTRL, HIGH);
+  }
+  else
+    digitalWrite(AC_CTRL, LOW);
+}

@@ -1,0 +1,287 @@
+<!DOCTYPE html5>
+<html>
+	<style>
+	</style>
+	<head>
+<<<<<<< HEAD
+		<title>Design and Implementation of a MIPS CPU with Multicycle Datapath</title>
+		<link rel="stylesheet" type="text/css" href="style/style.css" />
+		<link rel="shortcut icon" href="style/favicon.ico"/>
+		<meta name="keywords" content="Jeff Grindel, MIPS, CPU, design, Data, path, Implmentation, ModelSim, VHDL, Computer, Engineering, Assembly, Language, RISC"/>
+		<meta name="description" content="Design and implementation of a custom CPU done in VHDL"/>
+		<meta name="author" content="Jeff Grindel"/>	
+	
+		<meta name="og:url" content="http://jeffgrindel.com/MIPS.html" />
+		<meta name="og:title" content="Design and Implementation of a MIPS CPU with Multicycle Datapath" />
+		<meta name="og:description" content="Design and implementation of a custom CPU done in VHDL" />
+	
+		<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-37279532-1']);
+		  _gaq.push(['_setDomainName', 'jeffgrindel.com']);
+		  _gaq.push(['_setAllowLinker', true]);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+=======
+		<title>Jeff Grindel</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="shortcut icon" href="favicon.ico"/>
+		<meta name="keywords" content="Arduino, Jeff Grindel"/>
+		<meta name="description" content="Jeff Grindel's Website"/>
+		<meta name="author" content="Jeff Grindel"/>	
+	
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-36671313-1']);
+			_gaq.push(['_setDomainName', 'azurewebsites.net']);
+			_gaq.push(['_setAllowLinker', true]);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+>>>>>>> Added full website
+		</script>
+	
+	</head>
+	<body>
+		<header>
+			<h1 style="text-align:center;">Jeff Grindel</h1>
+			<p class="seperator shadow rounded" />
+		</header>
+		<div id="container" class="container">
+			<div id="content" class="content">
+				<div class="menu">
+					<ul class="menu shadow rounded">
+						<li class="header">Menu</li>
+						<li class="item"><a href="index.html">Home</a></li>
+						<li class="section">Projects</li>
+<<<<<<< HEAD
+						<li class="item"><a href="SousVide.html">Sous Vide</a></li>		
+						<li class="item"><a href="CISC_OS.html">CISC OS</a></li> <!--Change this to differ from the Projects link which is above -->
+						<li class="section"><a href="MIPS.html#Processor">MIPS Processor</a></li>
+						<li class="item"><a href="VLSI.html">Multi-Operand Adders</a></li>
+						<li class="item"><a href="projects.html#D3L">D3L Adders</a></li>
+						<li class="item"><a href="projects.html#CompSim">HDL Simulation</a></li>
+						<li class="item"><a href="Ipro2.html">Engineering Solutions</a></li>
+=======
+						<li class="item"><a href="projects.html#ASV">Sous Vide</a></li>		
+						<li class="item"><a href="CISC_OS.html#Micro">CISC OS</a></li> <!--Change this to differ from the Projects link which is above -->
+						<li class="section"><a href="projects.html#Processor">MIPS Processor</a></li>
+						<li class="item"><a href="projects.html#VLSI">VLSI Adders</a></li>
+						<li class="item"><a href="projects.html#Ipro2">Engineering Solutions</a></li>
+>>>>>>> Added full website
+						<li class="item"><a href="projects.html#Ipro1">Polar Power</a></li>
+						
+						
+						<li class="section">Contact</li>
+<<<<<<< HEAD
+						<li class="item"><a href="http://www.linkedin.com/in/jeffgrindel" target="_blank">LinkedIn</a></li>
+						<li class="item"><a href="mailto:jeff.grindel@gmail.com?Subject=Website Inquiry" target="_blank">Email</a></li>
+						<li class="item"><a href="school/Jeff_Grindel.pdf" target="_blank">Resume</a></li>
+						
+=======
+						<li class="item"><a href="mailto:jeff.grindel@gmail.com?Subject=Website Inquiry" target="_blank">Email</a></li>
+						<li class="item"><a href="school/Jeff_Grindel.pdf" target="_blank">Resume</a></li>
+						<li class="item"><a href="http://www.linkedin.com/in/jeffgrindel" target="_blank">LinkedIn</a></li>
+>>>>>>> Added full website
+					</ul>
+				</div>
+	
+				<div class="main">
+					<fieldset class="shadow rounded">
+<<<<<<< HEAD
+						<legend><a id="Processor">32-Bit MIPS Processor in VHDL</a></legend>
+							<p>The project was to design and implement a custom 32-bit MIPS processor. The processor is designed to implement 		
+							a limited amount of instructions, such as add, jump, branch, logic or, load word, and store word. The entire processor 
+							was simulated using VHDL and ModelSim to compile and test the program. The overall processor was split into sub components 
+							so it was easier to test and combine them when they worked. The processor mainly implemented the datapath side of the processor 
+							and did not have a dedicated control path to send control signals to the various blocks. The controls signals were mixed into 
+							the datapath implementation as needed. Full 
+							<a href="#source">source code </a> and report are at the bottom of the page. Project partner Tom Demeter.</p>
+						
+							<p><h3>Design</h3></p>    <!--Fix the format of this section!-->
+							<p><DD><h4>Instructions</h4>
+							<table id="Instructions"  style="float:center">
+								<tr>
+									<th>Instruction</th>
+									<th>Instruction Operation
+									<th>Intructions w/Reg Assignments</th>
+								</tr>
+								<tr>
+									<td>LW</td>
+									<td>LW $s3, 100($t2)</td>
+									<td>LW $19, 100($10)</td>
+								</tr>
+								<tr>
+									<td>SW</td>
+									<td>SW $s4, 200($t5)</td>
+									<td>SW $20, 200($13)</td>
+								</tr>
+								<tr>
+									<td>ADD</td>
+									<td>ADD $t3, $t2, $s2</td>
+									<td>ADD $11, $10, $18</td>
+								</tr>
+								<tr>
+									<td>OR</td>
+									<td>OR $t5, $s6, $t5</td>
+									<td>OR $13, $22, $13</td>
+								</tr>
+								<tr>
+									<td>SLT</td>
+									<td>SLT $t6, $s1, $t2</td>
+									<td>SLT $14, $17, $10</td>
+								</tr>
+								<tr>
+									<td>BEQ</td>
+									<td>BEQ $t5, $s2, 600</td>
+									<td>BEQ $13, $18, 0[$600-PC]</td>
+								</tr>
+								<tr>
+									<td>J</td>
+									<td>J 700</td>
+									<td>J 700</td>
+								</tr>
+								<tr>
+									<td>BNE</td>
+									<td>BNE $t5, $s2, 600</td>
+									<td>BNE $13, $18, 0[$600-PC]</td>
+								</tr>
+								<tr>
+									<td>ORI</td>
+									<td>ORI $t5, $t6, 10</td>
+									<td>ORI $13, $14, 10</td>
+								</tr>
+								<tr>
+									<td>SRL</td>
+									<td>SRL $t6, $t1, 10</td>
+									<td>SRL $14, $9, 5</td>
+								</tr>
+								<tr>
+									<td>LUI</td>
+									<td>LUI $t3, 40</td>
+									<td>LUI $11, 40</td>
+								</tr>
+							</table></DD></p><br>
+							
+						
+							<p><DD><h4>Datapath</h4>
+							The overall processor was broken down into multiple sub components in order to make testing and implementation easier. 
+							The main components were the PC generator, Instruction Memory, Instruction Decoder, Register Data, 32-bit ALU Data Memory, 
+							and various multiplexers and Sign Extenders. With all these components tested individually and verified to work, they were 
+							combined into the following overall datapath<br>
+							<br><img src="projects/485/DataPath_FINAL.JPG" width="100%">
+							</DD></p>
+							
+							<p><DD><h4>Controlpath</h4>
+							In this implementation of a processor instead of having a dedicated control unit to supply control signals to each component it was built into the datapath since it was a limited instruction set. The control lines can be seen above in the datapath picture. The control lines are in orange. The main control interpretation was done when the instruction was being decoded. This determined what type of instruction was being implemented. From here the control lines were fed to the multiplexers and the ALU in order to properly select the registers and data. 							
+							</DD></p>
+						
+							<p><DD><h4>Initial Values</h4>
+							The initial values were reset each time a new instruction was performed so it was easier to debug. Also the order of the instructions that were tested were not meant to be a real routine to run through, they were all placed in memory so it would be easier to run a single testbench instead of running multiple ones to test each instruction separately.  <br>
+							<br><img src="projects/485/Initial.JPG" width="75%">
+							</DD></p>
+						
+							<p><h3>Results</h3></p>
+							<p><DD><h4>ModelSim Output</h4>
+							ModelSim was used to compile and run all of the testbench programs. The final results from the processor are shown below
+							in the waveform diagram.
+							</DD></p>
+							
+							<img src="projects/485/Results.JPG" width="100%"> <!--Make it clickable so it can get bigger!-->
+							
+							<p><DD><h4>Instruction Descriptions</h4></DD>
+							<p><DD><h4>LW (PC Value: $500)</h4>
+							<u>lw $s3,100($t2) or lw $19,100($10)</u><br>The instruction load word is meant to load the word 
+							stored at 100($10)(With the initialized values this turns out to be memory location $164 which has the value $1234 stored in it) 
+							and store it in Reg 19. In this case we can see in the picture attached that the new value of Register 19 was changed to $1234. 
+							It can also be seen that the PC out value shows that it should be a sequential output, incrementing the PC value to PC+4 to a value of 
+							$504.</DD></p>
+							<p><DD><h4>SW (PC Value: $504)</h4>
+							<u>sw $s4,200($t5) or sw $20,200($13)</u><br>
+							The instruction Store word is meant to store the word at Reg 20 in the memory location designated by 200($13) (With initialized values, 
+							this memory location is $1F8). It can be seen in the picture that the value of Reg 20 is now the same as the value at memory location $1F8. 
+							Store word also increments the PC value sequentially to PC+4 to a value of $508.</DD></p>
+							<p><DD><h4>ADD (PC Value: $508)</h4>
+							<u>add $t3,$t2,$s2 or add $11,$10,$18</u><br>
+							The instruction Add simply adds the value of Reg 10 and Reg 18, and puts it Reg 11. The initial values of Reg 10 was $100 and Reg 18 was $180, 
+							thus when added results in $280. It can be seen in the picture of the results that the Value of Reg 11 was in fact $280. The PC value is 
+							incremented sequentially to PC+4 to a value of $50C.</DD></p>
+							<p><DD><h4>OR (PC Value: $50C)</h4>
+							<u>or $t5,$s6,$t5 or or $13,$22,$13</u><br>
+							The instruction or takes the logical OR of Reg 22 and Reg 13. It then places this value into Reg 13. The initial values of Reg 22 was $220 and 
+							Reg 13 was $130. The logical OR of these two hex numbers is $330. In the results picture it can be seen that the new value of Reg 13 is $330. 
+							The PC is also incremented sequentially to PC + 4 to a value of $510.</DD></p>
+							<p><DD><h4>SLT (PC Value: $510)</h4>
+							<u>slt $t6,$s1,$t2 or slt $14,$17,$10</u><br>
+							The instruction Set Less Than will set the value to $1 in Reg 14 if Reg 17 is less than Reg 10. Or it will set the value to $0 if Reg 17 is not 
+							less than Reg 10. In this case the value of Reg 17 was not less than Reg 10 the value of Reg 14 was set to $0. The PC is also incremented sequentially 
+							to PC+4 to a value of $514.</DD></p>
+							<p><DD><h4>BEQ (PC Value: $514)</h4>
+							<u>beq $t5,$s2,600 or beq $13,$18,0[$600-$514]</u><br>
+							The instruction branch if equal will branch to the branch address (which is calculated by taking the branch address, subtracting the current PC, 
+							and the adding that to the PC value) if the value in Reg 13 and Reg 18 are equal. In this case the value of Reg 13 is $130 and Reg 18 is $180, so 
+							they are not equal thus resulting in just a sequential increment of the PC to PC+4 to a value of $518. </DD></p>
+							<p><DD><h4>J (PC Value: $518)</h4>
+							<u>j 700</u><br>
+							The instruction jump will set the PC value to the immediate value assigned, in this case 700. It can be seen in the picture that the new PC value 
+							is $2BC (700 in hex).</DD></p>
+							<p><DD><h4>BNE (PC Value: $51C)</h4>
+							<u>bne $t5,$s2,600 or beq $13,$18,0[$600-$51C]</u><br>
+							The instruction branch if not equal will branch to the branch address (which is calculated by taking the branch address, subtracting the current PC, 
+							and the adding that to the PC value) if the value in Reg 13 and Reg 18 are not equal. In this case the value of Reg 13 is $130 and Reg 18 is $180, 
+							so they are not equal thus resulting in the branch to the new PC. It can be seen in the picture of the results that the new value of the PC is $600.</DD></p>
+							<p><DD><h4>ORI (PC Value: $520)</h4>
+							<u>ori $t5,$t6,10 or ori $13,$14,10</u><br>
+							The instruction Immediate Or takes the logical OR between Reg 14 and the immediate value 10 and places the result in Reg 13. In this case the value 
+							of Reg 14 is $140, when this is OR’ed with 10 the result is $14A. This can be seen as the result placed in Reg 13 in the results picture. The PC is 
+							also sequentially incremented to PC+4 to a value of $524.</DD></p>
+							<p><DD><h4>SRL (PC Value: $524)</h4>
+							<u>srl $t6,$t1,10 or srl $14,$9,5</u><br>
+							The instruction Shift Right Logical takes the value in Reg 9 and shifts it to the right 5 places and puts the result in Reg 14. The value if Reg 9 
+							is $90, this shift to the right by 5 places results in $4. This can be seen as the result in Reg 14 in the results picture. The PC is also sequentially 
+							incremented to PC+4 to a value of $528.</DD></p>
+							<p><DD><h4>LUI (PC Value: $528)</h4>
+							<u>lui $t3,40 or lui $11,40</u><br>
+							The instruction load upper immediate take the immediate value of 40 and loads it into the upper half of the word in Reg 11. This would result in a value 
+							of $00280110 in Reg 11. This can be seen in the results picture. The PC is also sequentially incremented to PC+4 to a value of $52C.</DD></p>
+							</p>
+							
+							<p><h5>Please remember to use academic honesty. This is simply to showcase the projects I have worked on. It does not help at all
+						   to just copy and paste another person's implementation.</h5></p>
+							
+						<a id = "source" href="https://github.com/jeff-grindel/32-Bit-Processor" target="_blank">Source/Report</a><br>
+=======
+						<legend><a id="Micro">32-Bit MIPS Processor in VHDL</a></legend>
+							<p>
+							Detailed Write-Up coming soon.
+							</p>
+>>>>>>> Added full website
+						
+						<a href="projects.html#Processor"><br><b>Back...</b></a>
+						
+						<br><a href="#Top"><br>Top</a>
+					</fieldset>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="shadow">
+<<<<<<< HEAD
+				<p>Jeff Grindel 2013</p>
+=======
+				<p>Jeff Grindel 2012</p>
+>>>>>>> Added full website
+			</div>
+		</footer>
+	</body>
+</html>

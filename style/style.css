@@ -1,0 +1,354 @@
+/*
+ * Made changes to the way the page was layed out
+ * 
+ * #The generally excepted standard for the width of your content area is 960px
+ * 
+ * #Look at the section I made
+ * 
+ * #Look at how I define the css classes so they're more reusable. 
+ *  You don't have to define your css based on class names, 
+ *  it can be based on element types. Look at the menu section
+ * 
+ * #Check out how the background on the menu makes it look a little 3D.
+ *  The image i used is only 1px wide, slightly transperant, and I just repeat-x.
+ *
+ * #Added Shadow and Border Radius classes
+ * 
+ * Don't be afraid to use more than one class on an element
+ * 
+ * Organize your CSS so it's not so messy,
+ * and use some javascript, it's good to know.
+ * 
+ */
+
+
+/*
+ * ######## SHADOW/BORDER RADIUS ########
+ */
+
+.shadow
+{
+	box-shadow: 5px 5px 5px rgba(100, 100, 100, .33);
+}
+
+.rounded {
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+/* 
+ * ######## BODY ########
+ */
+
+body {
+	font-size:80%;
+	font-family:verdana,arial,'sans serif';
+	background-color: #FDFDFD;
+	color:#2244AA;
+	margin:0px;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+}
+
+body .content {
+	color: #333333;
+	padding-top: 10px;
+}
+
+body div.content {
+	overflow: visible;
+	width: 960px;
+	margin: 0px auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+div.content p.about {
+	
+	height:auto;
+	display: inline-block;
+	width: 500px;
+	border:0px;
+	margin:0px;
+	text-wrap: normal;
+	padding:5px;
+	background-color:whitesmoke;
+}
+
+div.menu {
+	width: 160px;
+	height: auto;
+	display: inline;
+    float: left;
+	position: fixed;  /*Was relative Look into this somemore to make it look better*/
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+div.main {
+	width: 800px;
+	display: inline;
+	float: right;
+	position: relative;
+	margin-left: 0px;
+	margin-right: 0px;	
+	margin-bottom: 20px;
+}
+
+/*
+ *######## IMAGE ########
+ */
+
+div.image {
+	text-align: middle;
+	width: auto;
+	float: right;
+	vertical-align: top;
+	padding: 2px;
+	padding-bottom: 20px;
+	margin-top: -6px;
+	background-color: #2244AA;
+}
+
+div.image span.caption {
+	position: absolute;
+	/* bottom: 0px; */
+	color: #DDDDDD;
+}
+
+div.project {
+	width = 50%;
+	padding: 2px;
+	boarder: 2px solid black;
+}
+/*
+ * ######## FIELDSET ########
+ */
+ 
+ fieldset {
+	padding: 10px;
+	border: 1px solid #888888;
+	margin-top: -7px;
+ }
+ 
+ legend {
+	font-weight: bold;
+	font-size: 120%;
+ }
+
+ /*
+  *######## LIST ########
+  */
+ul {
+	float: left;
+	width: 400px;
+}
+
+ul .title {
+	font-weight: bold;
+	text-decoration: underline;
+	margin-left: -16px;
+}
+
+li {
+	
+}
+  
+ 
+/* 
+ * ######## MENU ########
+ */
+
+ul.menu {
+	list-style: none;
+	font-size: 110%;
+	width: 140px;
+	border: 1px solid #CCCCCC;
+	margin: 0px;
+	margin-right: 10px;
+	padding: 0px;
+}
+
+ul.menu li.header {
+	color: #DDDDDD;
+	background-color: #2244AA;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+ul.menu li.section{
+	color: #2244AA;
+	background-color: #AAAAAA;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+ul.menu li {
+	padding: 3px 6px;
+	background-color: #EEEEEE;
+	background-image: url('menu_background.png');
+	background-repeat: repeat-x;
+}
+
+ul.menu li a{
+	color: #333333;
+	display: block;
+	text-decoration: none;
+}
+
+ul.menu li.item:hover {
+	color:red;
+	background-color: #FFFFFF;
+	cursor: pointer;
+}
+ul.menu li.item:hover a {
+	color:red;
+}
+
+.no-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/*
+ * ######## HEADER ########
+ */
+
+.seperator {
+	margin-right: -10px;
+	margin-left: -10px;
+	height: 20px;
+	background-color:#2244AA;
+	background-image: url('menu_background.png');
+	background-repeat: repeat-x;
+	
+}
+
+header {
+	width:960px;
+	margin: 0 auto;
+}
+
+/*
+ * ######## FOOTER ########
+ */
+
+footer {
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+	text-align: center;
+
+}
+
+footer div {
+	color: #DDDDDD;
+	
+	width: 800px;
+	height: 20px;
+	
+	margin-left: auto;
+	margin-right: auto;
+	
+	background-color: #2244AA;
+	background-image: url('menu_background.png');
+	background-repeat: repeat-x;
+	
+	border-radius: 5px 5px 0px 0px;
+	-moz-border-radius: 5px 5px 0px 0px
+	-webkit-border-top-right-radius: 5px 5px 0px 0px
+	
+}
+
+footer div p {
+	padding-top: 3px;
+}
+
+/*
+ * ######## OLD ########
+ */
+
+div.menu1 {
+	padding:5px;
+	margin:0px;
+	float:left;
+	background-color:whitesmoke;
+}
+
+div.menu2{ 
+	height:100%;
+	width: 175px;
+	padding:5px;
+	margin:0px;
+	float:left;
+}
+
+
+
+div.content.right{
+	border:0px;
+	margin:0px;
+	padding:5px;
+	background-color:white;
+	float:left;
+}
+
+div.pro_main{
+	width:800px;
+	padding:5px;
+	border:5px solid navy;
+	margin:2px;
+	background-color:smokeywhite;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.pro_main2{
+	width:800px;
+	padding:5px;
+	border:5px solid navy;
+	margin:2px;
+	background-color:smokeywhite;
+	float:right;
+}
+
+div.vertical1{
+	float:left;
+}	
+table
+{
+	float:left;
+}
+
+table, td, th
+{
+	border:1px solid black;
+}
+
+
+h1 {font-size:200%;}
+h2 {font-size:140%;}
+h3 {font-size:110%;}
+
+br.top{
+	font-size:1px;
+	line-height:5px;
+}
+
+th {
+	background-color:#2244AA;
+	color:#DDDDDD;
+}
+
+p.two{border-style:solid;border-width:1x;}
+
+
+
